@@ -1,0 +1,11 @@
+%table
+  %thead
+    %tr
+      - attributes.each do |attr|
+        %td
+          = attr
+  %tbody
+    %tr
+      - attributes.each do |attr|
+        %td
+          = resource.public_send(attr).to_s

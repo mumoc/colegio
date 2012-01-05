@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %title Colegio
+    = stylesheet_link_tag 'application'
+    = javascript_include_tag 'application'
+    = csrf_meta_tag
+  %body.container
+    %article
+      %header
+        .span-3
+          %h1= link_to 'Mumotion', '/'
+      %nav.span-24
+        %ul
+          %li= link_to admin_root_path
+          %li= link_to 'Eventos', admin_events_path
+
+      %section#content
+        #main
+          = yield
+    %footer 
