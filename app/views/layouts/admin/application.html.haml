@@ -8,8 +8,13 @@
   %body.container
     %article
       %header
+        .span-3
+          %h1= link_to 'Mumotiono', '/'
       %nav.span-24
-        = 'waka'
+        %ul
+          %li= link_to admin_root_path
+          %li= link_to 'Eventos', admin_events_path
+
       %section#content
         #main
           = yield
