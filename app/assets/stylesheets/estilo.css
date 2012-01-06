@@ -1,8 +1,5 @@
 @charset "UTF-8";
 
-
-
-
 #container {
 	margin: 0 auto;
 	width: 960px;
@@ -11,17 +8,19 @@
 	-moz-box-shadow:0px 0px 6px rgba(0, 0, 0, 0.5);
 	-webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
 	background-color: #FFF;
-	background-image: url(fondoHome.gif);
+	
 }
 
 
 
 #header {
 	height: 100px;
+	background-image: url(images/fondoHome.gif);
+
 }
 
 #logo {
-	background-image: url(logo.png);
+	background-image: url(images/logo.png);
 	background-repeat: no-repeat;
 	height: 73px;
 	top: 15px;
@@ -30,51 +29,20 @@
 	left: 20px;
 }
 
-#menu {
-	float: right;
-	padding-top: 0px;
-	padding-right: 20px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-	height: auto;
-	width: auto;
-	position: relative;
-}
 
-
-#menu ul
-{
-	list-style-type: none;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-}
-
-#menu ul li { display: inline; }
-
-#menu ul li a
-{
-	text-decoration: none;
-	color: #666;
-	padding-right: .2em;
-	padding-left: .2em;
-}
-
-#menu ul li a:hover
-{
-	color: #333;
-	
-}
 
 
 
 #binformativo1 {
 	height: auto;
+	background-color: #CCC;
+
+	
 }
 
 
 #main {
-
+background-image: url(images/fondoMain.gif);
 	
 }
 
@@ -83,7 +51,6 @@
 #left {
 	float: left;
 	width: 725px;
-	background-image: url(fondoHome.gif);
 	display: block;	
 }
 
@@ -100,44 +67,40 @@
 }
 
 #foro {
-	height: auto;
-	width: auto;
-	background-repeat: no-repeat;
-	background-position: center center;
-	padding-top: 10px;
-	padding-right: 10px;
+	height: 145px;
+	width: 230px;
+	padding: 10px;
 	padding-bottom: 0px;
-	padding-left: 10px;
 	float: left;
 }
 
 #buzon {
-	float: left;
-	height: auto;
-	width: auto;
-	background-repeat: no-repeat;
-	padding-top: 10px;
-	padding-right: 10px;
+	height: 145px;
+	width: 230px;
+	padding: 10px;
 	padding-bottom: 0px;
-	padding-left: 10px;
-	background-position: center center;
+	float: left;
 }
 
 
 #sidebar {
-	background-color: #666;
 	height: 330px;
 	width: 235px;
 	float: right;
 }
 
 #footer {
-	height: 100px;
+	height: 50px;
 	background-color: #d5d5d5;
 	width: 100%;
 	float: left;
 	text-align: center;
 	padding-top: 30px;
+	font-family: 'Trykker', serif;
+	font-size: 14px;
+	font-weight: lighter;
+	color: #999;
+	text-shadow: 0px 1px 0px #e5e5ee;
 }
 body {
 	margin: 0px;
@@ -157,3 +120,141 @@ body {
 	.clearfix {display:block;}
 /* End hide from IE Mac */
 	
+
+
+.bannercom {
+	box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:inset 0px 0px 6px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.5);
+		
+}
+
+
+/*------------------------------------------------*/
+/*---------------[DROPDOWN MENU]------------------*/ 
+/*------------------------------------------------*/
+
+
+
+#menu {
+	font-size: 0.7em;
+	float: right;
+	padding-top: 0px;
+	padding-right: 15px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	height: auto;
+	width: auto;
+	position: relative;
+	z-index: 900;
+	top: -12px;
+	text-align: left;	
+}
+#menu ul { list-style-type: none;}
+#menu ul li.nivel1 {
+	float: left;
+	width: auto;
+	list-style-type: none;
+	text-align: center;
+	padding-right: 5;
+	padding-left: 5;
+	
+	
+	
+}
+#menu ul li a {
+	display: block;
+	text-decoration: none;
+	position: relative;
+	color: #666;
+	font-family: 'Trykker', serif;
+	font-size: 14px;
+	font-weight: lighter;
+	padding-top: 8px;
+	padding-right: 5px;
+	padding-bottom: 15px;
+	padding-left: 5px;	
+	
+}
+#menu ul li:hover {position: relative;
+}
+#menu ul li a:hover {
+	
+	color: #000;
+	position: relative;
+}
+
+
+#menu ul li:hover a.nivel1 {
+	color: #000;
+	position: relative;
+	z-index: 100;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #666;
+}
+
+
+#menu ul li a.nivel1 {display: block!important;display: none;
+position: relative;
+}
+#menu ul li ul {
+	display: none;
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:0px 0px 6px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+	
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-webkit-border-radius: 0px 5px 5px 5px;
+	border-radius: 0px 5px 5px 5px;
+
+
+}
+#menu ul li a:hover ul, #menu ul li:hover ul,#menu ul li ul li a:hover.final {display: block;
+position: absolute;left: 0px;
+color: #333;
+background-color: #CCC;
+}
+#menu ul li ul li a {
+	width: 160px;
+	padding: 6px 0px 8px 0px;
+	background-color: #FFF;
+
+	
+
+}
+
+
+
+
+
+
+#menu ul li ul li a:hover {
+		background-color: #CCC;
+
+	
+	border-top-color: #000;
+position: relative;
+}
+table.falsa {border-collapse:collapse;
+border:0px;
+float: left;
+position: relative;
+}
+
+.rounded-corners
+{
+border-radius: 10px 0 2em 4pt;
+-ms-border-radius: 10px 0 2em 4pt;
+-moz-border-radius: 10px 0 2em 4pt;
+-webkit-border-radius: 10px 0 2em 4pt;
+-khtml-border-radius: 10px 0 2em 4pt;
+}
+
+#menu ul li { display: inline; }
+
+
+}

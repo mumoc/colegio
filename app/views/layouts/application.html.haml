@@ -9,15 +9,7 @@
     #container.clearfix
       %header#header
         #logo
-        %nav#menu
-          %ul
-            %li= link_to 'Inicio', root_path
-            %li= link_to 'Colegio', '#'
-            %li= link_to 'Eventos', events_path
-            %li= link_to 'Calendario', '#'
-            %li= link_to 'Directorio', members_path
-            %li= link_to 'Industria', '#'
-            %li= link_to 'Contacto', '#'
+        = render partial: 'shared/menu'
       - if current 'home'
         %section#binformativo1
           = image_tag 'banner01.png'

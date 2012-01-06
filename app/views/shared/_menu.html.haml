@@ -1,0 +1,23 @@
+%nav#menu
+  %ul
+    %li.nivel1= link_to 'Inicio', root_path
+    %li.nivel1
+      = link_to 'Colegio', '#', class: 'nivel1'
+      %ul
+        %li= link_to 'Misión', '#'
+        %li= link_to 'Mesa Directiva', '#'
+        %li= link_to 'Historia', '#'
+        %li= link_to 'Estatutos', '#'
+
+    %li.nivel1
+      = link_to 'Eventos', events_path, class: 'nivel1'
+      %ul
+        %li= link_to 'Sesiones Ordinarias', '/events/sesiones-ordinarias'
+        %li= link_to 'Educación Continua', '/events/educacion-continua'
+        %li= link_to 'Filiales', '/events/filiales'
+        %li= link_to 'Congreso', '/events/congreso'
+
+    %li.nivel1= link_to 'Calendario', '#'
+    %li.nivel1= link_to 'Directorio', members_path
+    %li.nivel1= link_to 'Industria', '#'
+    %li.nivel1= link_to 'Contacto', '#'

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120106001618) do
+ActiveRecord::Schema.define(:version => 20120106234455) do
 
   create_table "addresses", :force => true do |t|
     t.string   "street"
@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(:version => 20120106001618) do
     t.string   "title"
     t.string   "coordinator"
     t.string   "description"
-    t.string   "type"
+    t.string   "event_type"
     t.string   "place"
     t.string   "schedule"
     t.string   "google_map"
