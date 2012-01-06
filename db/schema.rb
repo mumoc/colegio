@@ -21,16 +21,7 @@ ActiveRecord::Schema.define(:version => 20120106001618) do
     t.string   "cel_phone"
     t.string   "google_map"
     t.string   "colony"
-    t.integer  "coordinator_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "coordinators", :force => true do |t|
-    t.string   "title"
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "email"
+    t.integer  "member_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -44,6 +35,15 @@ ActiveRecord::Schema.define(:version => 20120106001618) do
     t.string   "schedule"
     t.string   "google_map"
     t.date     "event_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "members", :force => true do |t|
+    t.string   "title"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

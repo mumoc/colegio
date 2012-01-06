@@ -8,7 +8,7 @@ class CreateAddresses < ActiveRecord::Migration
       t.string :cel_phone
       t.string :google_map
       t.string :colony
-      t.integer :coordinator_id
+      t.integer :member_id
 
       t.timestamps
     end

@@ -2,12 +2,12 @@ Colegio::Application.routes.draw do
   root to: 'events#index'
   
   resources :events
-  resources :coordinators
+  resources :members
 
   namespace :admin do
     root to: 'events#index'
     resources :events
-    resources :coordinators
+    resources :members
     resources :adresses
   end
 end

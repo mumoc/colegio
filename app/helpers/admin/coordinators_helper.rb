@@ -1,2 +1,0 @@
-module Admin::CoordinatorsHelper
-end
