@@ -11,7 +11,7 @@
 	-moz-box-shadow:0px 0px 6px rgba(0, 0, 0, 0.5);
 	-webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
 	background-color: #FFF;
-	background-image: url(images/fondoHome.gif);
+	background-image: url(fondoHome.gif);
 }
 
 
@@ -21,7 +21,7 @@
 }
 
 #logo {
-	background-image: url(images/logo.png);
+	background-image: url(logo.png);
 	background-repeat: no-repeat;
 	height: 73px;
 	top: 15px;
@@ -83,7 +83,7 @@
 #left {
 	float: left;
 	width: 725px;
-	background-image: url(images/fondoHome.gif);
+	background-image: url(fondoHome.gif);
 	display: block;	
 }
 

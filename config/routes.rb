@@ -1,5 +1,5 @@
 Colegio::Application.routes.draw do
-  root to: 'events#index'
+  root to: 'home#index'
   
   resources :events
   resources :members
