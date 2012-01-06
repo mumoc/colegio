@@ -8,8 +8,10 @@
   %body.container
     %article
       %header
-      %nav.span-24
-        = 'waka'
+      %nav
+        %ul
+          %li= link_to 'Eventos', events_path
+          %li= link_to 'Coordinadores', coordinators_path
       %section#content
         #main
           = yield
