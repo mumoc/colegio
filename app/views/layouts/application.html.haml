@@ -18,8 +18,9 @@
             %li= link_to 'Directorio', members_path
             %li= link_to 'Industria', '#'
             %li= link_to 'Contacto', '#'
-      %section#binformativo1
-        = image_tag 'banner01.png'
+      - if current 'home'
+        %section#binformativo1
+          = image_tag 'banner01.png'
       #main
         %section#left
           = yield
