@@ -6,13 +6,23 @@
     = javascript_include_tag 'application'
     = csrf_meta_tag
   %body.container
-    %article
-      %header
-      %nav
+    %header#header.span-24
+      #logo
+      %nav#menu
         %ul
+          %li= link_to 'Inicio', root_path
+          %li= link_to 'Colegio', '#'
           %li= link_to 'Eventos', events_path
-          %li= link_to 'Miembros', members_path
-      %section#content
-        #main
-          = yield
-    %footer 
+          %li= link_to 'Calendario', '#'
+          %li= link_to 'Directorio', members_path
+          %li= link_to 'Industria', '#'
+          %li= link_to 'Contacto', '#'
+    %section#binformativo1.span-24
+      %img{:height => "300", :src => "images/banner01.png", :width => "960"}
+    #main.span-24
+      %section#left.span-18
+        = yield
+      %aside#sidebar.span-5
+        sidebar
+    %footer#footer.span-24
+      footer
