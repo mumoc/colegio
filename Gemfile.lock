@@ -32,6 +32,7 @@ GEM
     ansi (1.4.1)
     arel (2.2.1)
     builder (3.0.0)
+    cocoon (1.0.15)
     coffee-rails (3.1.1)
       coffee-script (>= 2.2.0)
       railties (~> 3.1.0)
@@ -127,6 +128,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  cocoon
   coffee-rails (~> 3.1.1)
   dragonfly
   haml-rails

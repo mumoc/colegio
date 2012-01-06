@@ -7,6 +7,7 @@ gem 'rmagick'
 gem 'dragonfly'
 gem 'jquery-rails'
 gem 'haml-rails'
+gem 'cocoon'
 
 gem 'inherited_resources'
 gem "simple_form"

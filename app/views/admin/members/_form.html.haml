@@ -1,0 +1,13 @@
+= simple_form_for [:admin, @member], :wrapper => 'inline' do |f|
+  = f.input :title
+  = f.input :first_name
+  = f.input :last_name
+  = f.input :email
+
+  #addresses
+    = f.simple_fields_for :addresses do |address|
+      = render 'address_fields', :f => address
+    .links
+      = link_to_add_association 'add address', f, :addresses
+  .actions
+    = f.button :submit, :disable_with => 'Please wait ...'
