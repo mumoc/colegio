@@ -11,9 +11,5 @@ tmp/
 *.DS_Store
 .pairs
 .DS_Store
-public/system/*
-public/assets/*
-spec/javascripts/generated/*
-.rbenv-version
-coverage/*
-app/assets/.DS_Store
+overage/*
+
