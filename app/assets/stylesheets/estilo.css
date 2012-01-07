@@ -48,11 +48,15 @@ background-image: url(fondoMain.gif);
 
 
 
-#left {
-	float: left;
+.left {
 	width: 725px;
-	display: block;	
+  display: inline-block;
 }
+.sidebar {
+	width: 230px;
+  display: inline-block;
+}
+
 
 #bcomercial {
 	float: left;
@@ -82,13 +86,6 @@ background-image: url(fondoMain.gif);
 	float: left;
 }
 
-
-#sidebar {
-	height: 330px;
-	width: 235px;
-	float: right;
-}
-
 #footer {
 	height: 50px;
 	background-color: #d5d5d5;
@@ -116,13 +113,8 @@ body {
 	visibility:hidden;
 }
 .clearfix {
-  display: inline-block;
+  display: block;
 }
-/* Hide from IE Mac \*/
-	.clearfix {display:block;}
-/* End hide from IE Mac */
-	
-
 
 .bannercom {
 	box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.5);

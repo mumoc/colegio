@@ -1,4 +1,5 @@
-#calendar
+#cal-wrapper{:style => 'padding: 20px;'}
+  #calendar
 #base-dialog
   #schedule
   #coordinator
@@ -9,6 +10,7 @@
     $('#base-dialog').dialog({ autoOpen:false });
     $('#calendar').fullCalendar({
       theme: true,
+      weekMode: 'variable',
       eventSources: [
         {
             url: '/event_dates/filiales.json', // use the `url` property
