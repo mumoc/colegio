@@ -15,7 +15,7 @@
           = image_tag 'banner01.jpg' 
       #main
         #left
-          %section
+          %section{class: ('content' unless current('home'))}
             = yield
         #sidebar
           %aside

@@ -46,7 +46,7 @@ background-image: url(fondoMain.gif);
   float: left; 
 }
 
-#left section {
+#left section.content {
   padding: 20px;
 }
 #sidebar {
