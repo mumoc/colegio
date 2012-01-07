@@ -1,8 +1,14 @@
 #calendar
+#base-dialog
+  #schedule
+  #coordinator
+  #place
 
 :javascript
   $(document).ready(function() {
+    $('#base-dialog').dialog({ autoOpen:false });
     $('#calendar').fullCalendar({
+      theme: true,
       eventSources: [
         {
             url: '/event_dates/filiales.json', // use the `url` property
@@ -24,6 +30,16 @@
             color: 'green',    // an option!
             textColor: 'black'  // an option!
         }
-      ]
+      ],
+      eventClick: function(event) {
+        dialog = $('#base-dialog');
+        dialog.attr('data-id',event.id);
+        dialog.find('#schedule').html(event.schedule)
+        dialog.find('#coordinator').html(event.coordinator)
+        dialog.find('#place').html(event.place)
+        dialog.dialog('option', 'title', event.title)
+        dialog.dialog('open');
+        return false;
+      }
     });
   });
