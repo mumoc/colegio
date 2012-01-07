@@ -4,7 +4,7 @@ Colegio::Application.routes.draw do
   
   resources :events
   resources :members
-  resources :event_dates
+  resources :calendar, :controller => 'event_dates'
 
   namespace :admin do
     root to: 'events#index'

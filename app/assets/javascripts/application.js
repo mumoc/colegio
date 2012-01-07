@@ -6,6 +6,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require fullcalendar
 //= require cocoon
+//= require fullcalendar
 //= require_tree .
