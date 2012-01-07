@@ -14,9 +14,11 @@
         %section#binformativo1
           = image_tag 'banner01.jpg' 
       #main
-        %section.left
-          = yield
-        %aside.sidebar
-          sidebar
+        #left
+          %section
+            = yield
+        #sidebar
+          %aside
+            sidebar
       %footer#footer
         footer

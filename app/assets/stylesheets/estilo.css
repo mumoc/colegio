@@ -27,34 +27,35 @@ background-image: url(fondoHome.gif);
 	position: relative;
 	width: 400px;
 	left: 20px;
+  float: left;
 }
-
-
-
 
 
 #binformativo1 {
 	height: auto;
 	background-color: #CCC;
-
-	
 }
 
 
 #main {
 background-image: url(fondoMain.gif);
-	
 }
 
-
-
-.left {
+#left {
 	width: 725px;
-  display: inline-block;
+  float: left; 
 }
-.sidebar {
-	width: 230px;
-  display: inline-block;
+
+#left section {
+  padding: 20px;
+}
+#sidebar {
+	width: 235px;
+  float: right;
+}
+
+#sidebar aside {
+  padding: 5px;
 }
 
 
@@ -141,7 +142,7 @@ body {
 	width: auto;
 	position: relative;
 	z-index: 900;
-	top: -12px;
+	top: 34px;
 	text-align: left;	
 }
 
