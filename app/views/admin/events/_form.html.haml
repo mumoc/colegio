@@ -1,0 +1,10 @@
+= simple_form_for [:admin, @event] do |f|
+  = f.input :title
+  = f.input :coordinator
+  = f.input :description
+  = f.input :event_type, collection: {'Sesiones Ordinarias' => 'sesiones-ordinarias','Educación Continua' => 'educacion-continua', 'Filiales' => 'filiales', 'Congreso' => 'congreso'}, prompt: 'Select Event Type'
+  = f.input :place
+  = f.input :schedule
+  = f.input :google_map
+  = f.input :event_date
+  = f.submit
