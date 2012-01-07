@@ -1,0 +1,29 @@
+#calendar
+
+:javascript
+  $(document).ready(function() {
+    $('#calendar').fullCalendar({
+      eventSources: [
+        {
+            url: '/event_dates/filiales.json', // use the `url` property
+            color: 'yellow',    // an option!
+            textColor: 'black'  // an option!
+        },
+        {
+            url: '/event_dates/congreso.json', // use the `url` property
+            color: 'red',    // an option!
+            textColor: 'black'  // an option!
+        },
+        {
+            url: '/event_dates/sesiones-ordinarias.json', // use the `url` property
+            color: 'blue',    // an option!
+            textColor: 'black'  // an option!
+        },
+        {
+            url: '/event_dates/educacion-continua.json', // use the `url` property
+            color: 'green',    // an option!
+            textColor: 'black'  // an option!
+        }
+      ]
+    });
+  });

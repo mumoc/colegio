@@ -1,10 +1,10 @@
 Colegio::Application.routes.draw do
   root to: 'home#index'
   match '/events/:event_type' => 'events#index'
-  
+  match '/event_dates/:event_type' => 'event_dates#index' 
   resources :events
   resources :members
-  resources :calendar, :controller => 'event_dates'
+  resources :calendar 
 
   namespace :admin do
     root to: 'events#index'
