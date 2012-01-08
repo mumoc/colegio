@@ -132,29 +132,21 @@ body {
 
 
 #menu {
-	font-size: 0.7em;
-	float: right;
-	padding-top: 0px;
-	padding-right: 15px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-	height: auto;
-	width: auto;
-	position: relative;
-	z-index: 900;
-	top: 34px;
-	text-align: left;	
+  font-size: 0.7em;
+  float: right;
+  padding-right: 15px;
+  position: relative;
+  z-index: 900;
+  top: 34px;
+  text-align: left;	
 }
 
 #menu ul { list-style-type: none; }
 
 #menu ul li.nivel1 {
-	float: left;
-	width: auto;
-	list-style-type: none;
-	text-align: center;
-	padding-right: 5;
-	padding-left: 5;
+  float: left;
+  text-align: center;
+  
 }
 
 #menu ul li a {
@@ -165,12 +157,7 @@ body {
 	font-family: 'Trykker', serif;
 	font-size: 14px;
 	font-weight: lighter;
-	padding-top: 8px;
-	padding-right: 5px;
-	padding-bottom: 15px;
-	padding-left: 5px;	
-	
-}
+  }
 
 #menu ul li:hover {position: relative; }
 
@@ -201,24 +188,20 @@ position: relative;
 	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
 	-moz-box-shadow:0px 0px 6px rgba(0, 0, 0, 0.5);
 	-webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
-	-moz-border-radius-topleft: 0px;
-	-moz-border-radius-topright: 5px;
-	-moz-border-radius-bottomright: 5px;
-	-moz-border-radius-bottomleft: 5px;
-	-webkit-border-radius: 0px 5px 5px 5px;
-	border-radius: 0px 5px 5px 5px;
+  background-color: #FFF;
+  -webkit-padding-start: 0px;
 }
 
 #menu ul li a:hover ul, #menu ul li:hover ul,#menu ul li ul li a:hover.final {
 display: block;
-position: absolute;left: 0px;
+position: absolute;
 color: #333;
-background-color: #CCC;
 }
 
 #menu ul li ul li a {
 	width: 160px;
-	padding: 6px 0px 8px 0px;
-	background-color: #FFF;
+}
+#menu ul li ul li a:hover {
+	background-color: #CCC;
 }
 
