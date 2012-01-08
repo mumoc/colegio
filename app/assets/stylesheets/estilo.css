@@ -146,6 +146,7 @@ body {
 #menu ul li.nivel1 {
   float: left;
   text-align: center;
+  padding: 5px;
   
 }
 
@@ -179,8 +180,8 @@ body {
 
 
 #menu ul li a.nivel1 {
-display: block;
-position: relative;
+  display: block;
+  position: relative;
 }
 
 #menu ul li ul {
@@ -200,6 +201,7 @@ color: #333;
 
 #menu ul li ul li a {
 	width: 160px;
+  padding: 3px;
 }
 #menu ul li ul li a:hover {
 	background-color: #CCC;
