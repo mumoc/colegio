@@ -1,4 +1,6 @@
 class Event < ActiveRecord::Base
+  extend FriendlyId
+  friendly_id :title, use: :slugged
 
   def self.selected event_type
     event_type ? where(event_type: event_type) : all

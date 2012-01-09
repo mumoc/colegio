@@ -45,6 +45,7 @@ GEM
     erubis (2.7.0)
     execjs (1.2.13)
       multi_json (~> 1.0)
+    friendly_id (4.0.0)
     haml (3.1.4)
     haml-rails (0.3.4)
       actionpack (~> 3.0)
@@ -131,6 +132,7 @@ DEPENDENCIES
   cocoon
   coffee-rails (~> 3.1.1)
   dragonfly (~> 0.9.9)
+  friendly_id (~> 4.0.0)
   haml-rails
   inherited_resources
   jquery-rails

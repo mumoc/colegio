@@ -1,6 +1,4 @@
 = 'TODOS MEMBERS'
 - @members.each do |e|
   %br
-  = e.first_name
-  %br
-  = e.street
+  = link_to e.first_name, member_path(e)

@@ -40,7 +40,8 @@
         dialog.find('#schedule').html(event.schedule);
         dialog.find('#coordinator').html(event.coordinator);
         dialog.find('#place').html(event.place);
-        var event_link = "<a href=/events/" + event.id + ">Details</a>";
+        var sluged_title = event.title.replace(/ /g ,'-').toLowerCase();
+        var event_link = "<a href=/events/" + sluged_title + ">Details</a>";
         dialog.find('#data').html(event_link);
         dialog.dialog('option', 'title', event.title);
         dialog.dialog('open');
