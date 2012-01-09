@@ -15,14 +15,11 @@ class Event < ActiveRecord::Base
     start_date = Time.at(data[:start].to_i).to_date
     end_date = Time.at(data[:end].to_i).to_date
     dates = where(event_date: start_date..end_date)
-    if self.adapter == 'postgresql'
-      dates = dates.select('DISTINCT ON (events.event_date) events.title, events.description, events.coordinator, events.event_type, events.place, events.schedule, events.google_map, events.event_date')
-    else
+    unless ActiveRecord::Base.connection.adapter_name == 'PostgreSQL'
+    unless self.adapter == 'postgresql'
       dates = dates.group(:event_date)
+    else
+      dates = dates.select('DISTINCT ON (events.event_date) events.title, events.description, events.coordinator, events.event_type, events.place, events.schedule, events.google_map, events.event_date')
     end
-  end
-
-  def self.adapter
-    connection.adapter_name.downcase.to_sym
   end
 end
