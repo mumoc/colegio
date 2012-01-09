@@ -25,11 +25,9 @@
         $('#small-calendar').find('thead tr.fc-first th').css('padding-left','1px');
         $('#small-calendar').find('thead tr.fc-first th').css('border-left','none');
        },
-      dayClick: function(date, allDay, jsEvent, view) {
-        alert('Clicked on the entire day: ' + date);
-      },
       eventClick: function(event, jsEvent, view) {
-        alert('Clicked on the entire day: ' + event.start);
+        var event_date = "/calendar/day/" + $.fullCalendar.formatDate( event.start, "yyyy-MM-dd");
+        window.location = event_date;
       }
     });
   });

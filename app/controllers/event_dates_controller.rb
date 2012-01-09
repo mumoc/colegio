@@ -8,7 +8,7 @@ class EventDatesController < ApplicationController
       "coordinator" => e.coordinator, 'description' => e.description, 
       'event_type' => e.event_type,'place' => e.place, 
       'schedule' => e.schedule, 'map' => e.google_map,
-      "start" => e.event_date} } unless events.empty? 
+      "start" => e.event_date, 'id' => e.id} } unless events.empty? 
     respond_with events_hash
   end
 
