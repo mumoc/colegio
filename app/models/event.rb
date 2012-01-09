@@ -1,6 +1,12 @@
 class Event < ActiveRecord::Base
   extend FriendlyId
   friendly_id :title, use: :slugged
+  
+  acts_as_gmappable
+
+  def gmaps4rails_address
+    "#{self.place}"
+  end
 
   def self.selected event_type
     event_type ? where(event_type: event_type) : all

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120109061551) do
+ActiveRecord::Schema.define(:version => 20120109165204) do
 
   create_table "addresses", :force => true do |t|
     t.string   "street"
@@ -38,6 +38,9 @@ ActiveRecord::Schema.define(:version => 20120109061551) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "slug"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.boolean  "gmaps"
   end
 
   add_index "events", ["slug"], :name => "index_events_on_slug", :unique => true

@@ -11,6 +11,7 @@ gem 'haml-rails'
 gem 'cocoon'
 gem 'kaminari'
 gem 'has_scope'
+gem 'gmaps4rails'
 
 gem 'inherited_resources'
 gem "simple_form"

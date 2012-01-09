@@ -1,3 +1,5 @@
 = @event.title
 %br
 = @event.schedule
+%br
+= gmaps(markers: { data: @json } )
