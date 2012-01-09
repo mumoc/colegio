@@ -2,4 +2,4 @@
 %br
 = @event.schedule
 %br
-= gmaps(markers: { data: @json } )
+= gmaps(map_options: { zoom: 16, auto_adjust: true, auto_zoom: false }, markers: { data: @json } )
