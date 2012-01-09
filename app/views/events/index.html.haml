@@ -1,4 +1,4 @@
 = 'TODOS EVENTOS'
 - @events.each do |e|
   %br
-  = e.title
+  = link_to e.title, event_path(e)

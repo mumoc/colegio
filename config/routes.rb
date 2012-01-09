@@ -1,7 +1,7 @@
 Colegio::Application.routes.draw do
   root to: 'home#index'
   match '/calendar/day/:event_date' => 'calendar#show', :as => 'day_events'
-  match '/events/:event_type' => 'events#index'
+  match '/events/category/:event_type' => 'events#index'
   match '/event_dates/:event_type' => 'event_dates#index' 
   resources :events
   resources :members

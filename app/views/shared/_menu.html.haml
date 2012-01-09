@@ -12,10 +12,10 @@
     %li.nivel1
       = link_to 'Eventos', events_path, class: 'nivel1'
       %ul
-        %li= link_to 'Sesiones Ordinarias', '/events/sesiones-ordinarias'
-        %li= link_to 'Educación Continua', '/events/educacion-continua'
-        %li= link_to 'Filiales', '/events/filiales'
-        %li= link_to 'Congreso', '/events/congreso'
+        %li= link_to 'Sesiones Ordinarias', '/events/category/sesiones-ordinarias'
+        %li= link_to 'Educación Continua', '/events/category/educacion-continua'
+        %li= link_to 'Filiales', '/events/category/filiales'
+        %li= link_to 'Congreso', '/events/category/congreso'
 
     %li.nivel1= link_to 'Calendario', calendar_index_path
     %li.nivel1= link_to 'Directorio', members_path

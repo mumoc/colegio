@@ -3,6 +3,8 @@
   #schedule
   #coordinator
   #place
+  #data
+
 
 :javascript
   $(document).ready(function() {
@@ -35,10 +37,12 @@
       eventClick: function(event) {
         dialog = $('#base-dialog');
         dialog.attr('data-id',event.id);
-        dialog.find('#schedule').html(event.schedule)
-        dialog.find('#coordinator').html(event.coordinator)
-        dialog.find('#place').html(event.place)
-        dialog.dialog('option', 'title', event.title)
+        dialog.find('#schedule').html(event.schedule);
+        dialog.find('#coordinator').html(event.coordinator);
+        dialog.find('#place').html(event.place);
+        var event_link = "<a href=/events/" + event.id + ">Details</a>";
+        dialog.find('#data').html(event_link);
+        dialog.dialog('option', 'title', event.title);
         dialog.dialog('open');
         return false;
       }

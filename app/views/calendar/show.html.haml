@@ -1,4 +1,4 @@
 - @day_events.each do |event|
-  = event.title
-
+  = link_to event.title, event_path(event)
+%br
 = link_to 'Calendar', calendar_index_path
