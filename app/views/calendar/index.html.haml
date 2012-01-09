@@ -34,6 +34,17 @@
             textColor: 'black'  // an option!
         }
       ],
+      eventRender: function(event, element) {
+        var short_title = '';
+        if ((event.title.length - 15) > 0)  {
+          short_title = event.title.substring(0,15) + '...';
+        }
+        else{
+          short_title = event.title
+        }
+
+        element.find('.fc-event-title').html(short_title);    
+      },
       eventClick: function(event) {
         dialog = $('#base-dialog');
         dialog.attr('data-id',event.id);
