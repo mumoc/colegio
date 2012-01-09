@@ -1,0 +1,26 @@
+#wrap-small-calendar
+  #small-calendar
+:javascript
+  $(document).ready(function() {
+    $('#small-calendar').fullCalendar({
+      theme: true,
+      weekMode: 'variable',
+      header: {
+        left:   '',
+        center: 'title',
+        right:  ''
+      },
+      dayNamesShort: ['S', 'M', 'T', 'W','T', 'F', 'S'],
+      eventSources: [
+        {
+          url: '/event_dates/all.json',
+          color: 'blue',
+        }
+      ],
+      dayClick: function(date, allDay, jsEvent, view) {
+        if (allDay) {
+            alert('Clicked on the entire day: ' + date);
+        }
+      }
+    });
+  });

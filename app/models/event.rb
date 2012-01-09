@@ -10,4 +10,10 @@ class Event < ActiveRecord::Base
     selected(data[:event_type])
       .where(event_date: start_date..end_date)
   end
+
+  def self.small data
+    start_date = Time.at(data[:start].to_i).to_date
+    end_date = Time.at(data[:end].to_i).to_date
+    where(event_date: start_date..end_date).group(:event_date)
+  end
 end
