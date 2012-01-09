@@ -70,6 +70,10 @@ background-image: url(fondoMain.gif);
 	padding-bottom: 10px;
 	padding-left: 10px;
 }
+#comercial{
+  width: 450px;
+  heigth: 300px;
+}
 
 #foro {
 	height: 145px;

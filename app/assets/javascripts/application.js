@@ -9,4 +9,5 @@
 //= require jquery-ui
 //= require cocoon
 //= require fullcalendar
+//= require jquery.nivo.slider
 //= require_tree .

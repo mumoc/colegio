@@ -11,8 +11,7 @@
         #logo
         = render partial: 'shared/menu'
       - if current 'home'
-        %section#binformativo1
-          = image_tag 'banner01.jpg' 
+        = render partial: 'shared/main-slider' 
       #main
         #left
           %section{class: ('content' unless current('home'))}
