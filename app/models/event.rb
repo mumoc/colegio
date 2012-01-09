@@ -15,8 +15,7 @@ class Event < ActiveRecord::Base
     start_date = Time.at(data[:start].to_i).to_date
     end_date = Time.at(data[:end].to_i).to_date
     dates = where(event_date: start_date..end_date)
-    unless ActiveRecord::Base.connection.adapter_name == 'PostgreSQL'
-    unless self.adapter == 'postgresql'
+    unless ActiveRecord::Base.connection.adapter_name == 'PostgreSQL' 
       dates = dates.group(:event_date)
     else
       dates = dates.select('DISTINCT ON (events.event_date) events.title, events.description, events.coordinator, events.event_type, events.place, events.schedule, events.google_map, events.event_date')
