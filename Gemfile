@@ -9,6 +9,8 @@ gem 'dragonfly', '~>0.9.9'
 gem 'jquery-rails'
 gem 'haml-rails'
 gem 'cocoon'
+gem 'kaminari'
+gem 'has_scope'
 
 gem 'inherited_resources'
 gem "simple_form"

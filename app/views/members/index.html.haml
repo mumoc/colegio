@@ -1,4 +1,5 @@
 = 'TODOS MEMBERS'
+= paginate @members
 - @members.each do |e|
   %br
   = link_to e.first_name, member_path(e)

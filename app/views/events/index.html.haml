@@ -1,4 +1,5 @@
 = 'TODOS EVENTOS'
+= paginate @events
 - @events.each do |e|
   %br
   = link_to e.title, event_path(e)
