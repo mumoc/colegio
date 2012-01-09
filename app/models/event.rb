@@ -14,6 +14,6 @@ class Event < ActiveRecord::Base
   def self.small data
     start_date = Time.at(data[:start].to_i).to_date
     end_date = Time.at(data[:end].to_i).to_date
-    where(event_date: start_date..end_date)
+    where(event_date: start_date..end_date).select('DISTINCT ON (events.event_date) events.title, events.description, events.coordinator, events.event_type, events.place, events.schedule, events.map, events.event_date')
   end
 end
