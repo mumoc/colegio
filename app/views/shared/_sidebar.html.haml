@@ -17,10 +17,19 @@
           color: 'blue',
         }
       ],
+      viewDisplay: function(view) {
+        $('#small-calendar').find('table').css('font-size','0.7em');
+        $('#small-calendar').find('.ui-widget-content').css('border','none');
+        $('#small-calendar').find('.fc-other-month').remove();
+        $('#small-calendar').find('thead tr.fc-first th').css('border-left','none');
+        $('#small-calendar').find('thead tr.fc-first th').css('padding-left','1px');
+        $('#small-calendar').find('thead tr.fc-first th').css('border-left','none');
+       },
       dayClick: function(date, allDay, jsEvent, view) {
-        if (allDay) {
-            alert('Clicked on the entire day: ' + date);
-        }
+        alert('Clicked on the entire day: ' + date);
+      },
+      eventClick: function(event, jsEvent, view) {
+        alert('Clicked on the entire day: ' + event.start);
       }
     });
   });
