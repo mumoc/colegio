@@ -1,0 +1,13 @@
+= simple_form_for [:admin, @banner], :wrapper => 'inline' do |f|
+  = f.input :status
+  = f.input :banner_type, collection: {'Informativo' => 1, 'Comercial' => 2, 'Sidebar' => 3 }, prompt: 'Select Banner Type'
+
+  #images
+    = f.simple_fields_for :images do |image|
+      = render 'image_fields', :f => image
+    .links
+      = link_to_add_association 'add images', f, :images
+  .actions
+    = f.button :submit, :disable_with => 'Please wait ...'
+
+   

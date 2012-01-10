@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120109165204) do
+ActiveRecord::Schema.define(:version => 20120110033705) do
 
   create_table "addresses", :force => true do |t|
     t.string   "street"
@@ -22,6 +22,13 @@ ActiveRecord::Schema.define(:version => 20120109165204) do
     t.string   "google_map"
     t.string   "colony"
     t.integer  "member_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "banners", :force => true do |t|
+    t.integer  "banner_type"
+    t.boolean  "status"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -44,6 +51,14 @@ ActiveRecord::Schema.define(:version => 20120109165204) do
   end
 
   add_index "events", ["slug"], :name => "index_events_on_slug", :unique => true
+
+  create_table "images", :force => true do |t|
+    t.integer  "banner_id"
+    t.string   "banner_image_uid"
+    t.string   "image_link"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "members", :force => true do |t|
     t.string   "title"

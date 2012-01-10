@@ -1,7 +1,7 @@
 #bcomercial
   #comercial
-    = image_tag 'banercom01.jpg'
-    = image_tag 'banercom02.jpg'
+    - @comercial.each do |image|
+      = image_tag banner('450x300',image)
 #foro
   = image_tag 'foro-ref.jpg'
 #buzon

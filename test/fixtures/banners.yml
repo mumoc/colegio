@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  banner_type: 1
+  status: false
+
+two:
+  banner_type: 1
+  status: false

@@ -1,0 +1,10 @@
+.nested-fields
+  %table
+    %tr
+      %td
+        = f.input :image do
+          = f.input_field :banner_image, :as => :file, :accept => 'gif|jpg|jpeg|png'
+          = f.input :image_link
+      %td
+        = link_to_remove_association "Remove Image", f
+

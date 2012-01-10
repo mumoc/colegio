@@ -1,7 +1,7 @@
 %section#binformativo1
   #slider
-    = image_tag 'banner01.jpg'
-    = image_tag 'banner02.jpg'
+    - @informativo.each do |image|
+      = image_tag banner('950x300', image)
 
 :javascript
   $(document).ready(function(){

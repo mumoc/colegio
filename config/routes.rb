@@ -12,5 +12,6 @@ Colegio::Application.routes.draw do
     resources :events
     resources :members
     resources :adresses
+    resources :banners
   end
 end
