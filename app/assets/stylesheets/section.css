@@ -1,0 +1,68 @@
+.ligas, .ligas a {
+	color: #666;
+	font-size: 14px;
+	text-decoration: none;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: lighter;
+}
+
+
+h1 {
+	font-size: 24px;
+	font-family: 'Trykker', serif;
+	color: #d8594a;
+}
+
+
+h2 {
+	font-size: 18px;
+	font-family: 'Trykker', serif;	
+}
+
+
+#industria{
+	width: 725px;	
+}
+
+#colegio{
+	width: 725px;	
+}p {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+}
+
+
+.resaltar{
+	color: #666;
+	font-size: 14px;
+	text-decoration: none;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: bold;
+}
+
+
+#hor-zebra
+{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	
+	width:100%;
+	text-align: left;
+	border-collapse: collapse;
+}
+#hor-zebra th
+{
+	font-size: 14px;
+	font-weight: normal;
+	padding: 10px 8px;
+	color: #000;
+}
+#hor-zebra td
+{
+	padding: 8px;
+	color: #333;
+}
+#hor-zebra .odd
+{
+	background-color: #EBEBEB;
+}
