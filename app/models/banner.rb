@@ -13,7 +13,7 @@ class Banner < ActiveRecord::Base
   end
 
   def self.sidebar_images
-    self.where(banner_type: 3).first
+    banner = self.where(banner_type: 3).first
     banner.images unless banner.nil?
   end
 end
