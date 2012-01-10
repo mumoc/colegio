@@ -1,7 +1,12 @@
 #bcomercial
   #comercial
-    - @comercial.each do |image|
-      = image_tag banner('450x300',image)
+    - unless @comercial.nil?
+      - @comercial.each do |image|
+        - if image.image_link.empty?
+          = link_to image.image_link do
+            = image_tag banner('450x300', image)
+        - else
+          = image_tag banner('450x300',image)
 #foro
   = image_tag 'foro-ref.jpg'
 #buzon
