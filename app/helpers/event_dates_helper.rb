@@ -1,2 +1,0 @@
-module EventDatesHelper
-end
