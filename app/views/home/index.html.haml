@@ -13,6 +13,8 @@
   = image_tag 'buzon-ref.jpg'
 
 :javascript
-  $(window).load(function(){
-    $('#comercial').nivoSlider({ controlNav: false });  
-    });
+  $(document).ready(function(){
+    setTimeout(function(){
+       $('#comercial').nivoSlider({ controlNav: false });
+    },200);  
+  });

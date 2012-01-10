@@ -9,6 +9,8 @@
             = image_tag banner('950x300', image)
 
 :javascript
-  $(window).load(function(){
-    $('#slider').nivoSlider({controlNav: false });
+  $(document).ready(function(){
+    setTimeout(function(){
+      $('#slider').nivoSlider({controlNav: false });
+    },200);
   });
