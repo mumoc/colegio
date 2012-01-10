@@ -1,5 +1,5 @@
 %section#binformativo1
-  #slider
+  #slider{style: 'width: 950px; height:300px; overflow: hidden; '}
     - unless @informativo.nil?
       - @informativo.each do |image|
         - if image.image_link.empty?
@@ -7,4 +7,7 @@
         - else
           = link_to image.image_link do
             = image_tag banner('950x300', image)
-
+:javascript
+  $(window).load(function(){
+    $('#slider').nivoSlider();
+  });

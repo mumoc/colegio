@@ -1,5 +1,5 @@
 #bcomercial
-  #comercial
+  #comercial{style: 'width: 450px; height:300px; overflow: hidden; '}
     - unless @comercial.nil?
       - @comercial.each do |image|
         - if image.image_link.empty?
@@ -12,4 +12,7 @@
 #buzon
   = image_tag 'buzon-ref.jpg'
 
-
+:javascript
+  $(window).load(function(){
+    $('#comercial').nivoSlider();
+  });
