@@ -3,10 +3,10 @@
     - unless @informativo.nil?
       - @informativo.each do |image|
         - if image.image_link.empty?
-          = image_tag banner('950x300',image)
+          = image_tag banner('960x300',image)
         - else
           = link_to image.image_link do
-            = image_tag banner('950x300', image)
+            = image_tag banner('960x300', image)
 :javascript
   $(window).load(function(){
     $('#slider').nivoSlider();
