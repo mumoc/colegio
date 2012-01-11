@@ -7,7 +7,7 @@ class HomeController < ApplicationController
     
   def download 
     image_url = Banner.first.images.first.banner_image.remote_url
-    send_file image_url, :type=>"application/zip"
+    send_file 'http://mumo-cmoj.s3.amazonaws.com/zips/pdf.zip', :type=>"application/zip"
   end
 
 end
