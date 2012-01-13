@@ -1,3 +1,21 @@
+#slider {
+  width: 960px;
+  height: 300px;
+}
+
+#ban-sidebar {
+  width: 210px;
+  height: 300px;
+}
+
+#bsidebar {
+  padding-left: 10px;
+}
+
+#comercial {
+  width: 450px;
+  height: 300px;
+}
 .ligas, .ligas a {
 	color: #666;
 	font-size: 14px;

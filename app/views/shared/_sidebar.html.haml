@@ -1,8 +1,8 @@
 #wrap-small-calendar
   #small-calendar
 - unless current 'home'
-  #bsidebaer.slider-wrapper.theme-default
-    #ban-sidebar.nivoSilder{style: 'width:210px; height: 300px;'}
+  #bsidebar.slider-wrapper.theme-default
+    #ban-sidebar.nivoSilder
       - unless @sidebar.nil?
         - @sidebar.each do |image|
           - if image.image_link.empty?
@@ -33,7 +33,8 @@
         $('#small-calendar').find('table').css('font-size','0.7em');
         $('#small-calendar').find('.ui-widget-content').css('border','none');
         $('#small-calendar').find('.fc-other-month').remove();
-        $('#small-calendar').find('thead tr.fc-first th').css('border-left','none');
+        $('#small-calendar').find('thead tr.fc-first th').css('border-right','none');
+        $('#small-calendar').find('thead tr.fc-first th').css('padding-right','1px');
         $('#small-calendar').find('thead tr.fc-first th').css('padding-left','1px');
         $('#small-calendar').find('thead tr.fc-first th').css('border-left','none');
        },

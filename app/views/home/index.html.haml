@@ -1,5 +1,5 @@
 #bcomercial.slider-wrapper.theme-default
-  #comercial.nivoSlider{style: 'width: 450px; height:300px; overflow: hidden; '}
+  #comercial.nivoSlider
     - unless @comercial.nil?
       - @comercial.each do |image|
         - if image.image_link.empty?
@@ -14,5 +14,5 @@
 
 :javascript
   $(window).load(function(){
-    $('#comercial').nivoSlider();
+    $('#comercial').nivoSlider({ controlNav: false });
   });
