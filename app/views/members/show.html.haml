@@ -1,8 +1,21 @@
-= @member.title
-= @member.first_name
-= @member.last_name
-%br
-= @member.email
-%br
-%br
-= link_to 'Members List', members_path
+#detalle
+  %h1 Directorio
+  .detalle-miembros
+    #nombre-m
+      = @member.full_name
+    #correo-m
+      = link_to @member.email, "mailto:#{@member.email}"
+    .cel-tel
+      Tel: #{@member.address.local_phone}
+    .cel-tel
+      Cel: #{@member.address.cel_phone}
+    .direccion-m
+      %strong Dirección
+      %br
+      = @member.address.street
+      %br
+      = "Col. #{@member.address.colony}"
+.mapa-miembro
+  = gmaps(map_options: { zoom: 16, auto_adjust: true, auto_zoom: false }, markers: { data: @json } )
+  
+= link_to 'Ver lista', members_path, id: 'regresar-lista'

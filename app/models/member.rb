@@ -8,4 +8,8 @@ class Member < ActiveRecord::Base
    def address
      self.addresses.first
    end
+
+   def full_name
+     "#{title} #{first_name} #{last_name}"
+   end
 end

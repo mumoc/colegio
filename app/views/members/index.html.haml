@@ -1,5 +1,10 @@
-= 'TODOS MEMBERS'
-= paginate @members
-- @members.each do |e|
-  %br
-  = link_to e.first_name, member_path(e)
+#directorio
+  %h1 Directorio
+  .orden
+    = paginate @members
+  .miembros
+    #nombres-miembros
+      %ul
+        - @members.each do |e|
+          %li
+            = link_to e.full_name, member_path(e)
