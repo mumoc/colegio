@@ -5,17 +5,20 @@
       = @member.full_name
     #correo-m
       = link_to @member.email, "mailto:#{@member.email}"
-    .cel-tel
-      Tel: #{@member.address.local_phone}
-    .cel-tel
-      Cel: #{@member.address.cel_phone}
-    .direccion-m
-      %strong Dirección
-      %br
-      = @member.address.street
-      %br
-      = "Col. #{@member.address.colony}"
+    #addresses
+      - @member.addresses.each do |address|
+        .cel-tel
+          Tel: #{address.local_phone}
+        .cel-tel
+          Cel: #{address.cel_phone}
+        .direccion-m
+          %strong Dirección
+          %br
+          = address.street
+          %br
+          = "Col. #{@member.address.colony}"
+
 .mapa-miembro
-  = gmaps(map_options: { zoom: 16, auto_adjust: true, auto_zoom: false }, markers: { data: @json } )
+  = gmaps(map_options: {auto_adjust: true, auto_zoom: true }, markers: { data: @json } )
   
 = link_to 'Ver lista', members_path, id: 'regresar-lista'

@@ -1,5 +1,5 @@
-%section#binformativo1
-  #slider{style: 'width: 950px; height:300px; overflow: hidden; '}
+%section#binformativo.slider-wrapper.theme-default
+  #slider.nivoSlider{style: 'width: 960px; height:300px;'}
     - unless @informativo.nil?
       - @informativo.each do |image|
         - if image.image_link.empty?
@@ -10,4 +10,4 @@
 :javascript
   $(window).load(function(){
     $('#slider').nivoSlider();
-  });
+  }); 

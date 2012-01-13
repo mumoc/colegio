@@ -1,7 +1,19 @@
 #wrap-small-calendar
   #small-calendar
+- unless current 'home'
+  #bsidebaer.slider-wrapper.theme-default
+    #ban-sidebar.nivoSilder{style: 'width:210px; height: 300px;'}
+      - unless @sidebar.nil?
+        - @sidebar.each do |image|
+          - if image.image_link.empty?
+            = image_tag banner('210x300',image)
+          - else
+            = link_to image.image_link do
+              = image_tag banner('210x300', image)
+
 :javascript
   $(document).ready(function() {
+    $('#ban-sidebar').nivoSlider({ controlNav: false });
     $('#small-calendar').fullCalendar({
       theme: true,
       weekMode: 'variable',

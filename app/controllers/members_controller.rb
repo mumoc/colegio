@@ -5,6 +5,6 @@ class MembersController < ApplicationController
 
   def show
     @member = Member.find params[:id]
-    @json = @member.address.to_gmaps4rails 
+    @json = @member.addresses.to_gmaps4rails 
   end
 end
