@@ -14,5 +14,11 @@
 
 :javascript
   $(window).load(function(){
-    $('#comercial').nivoSlider({ controlNav: false });
+    $('#comercial').nivoSlider({
+      effect: 'fade',
+      animSpeed: 500, 
+      pauseTime: 5000, 
+      directionNav: false, 
+      controlNav: false
+    });
   });

@@ -9,5 +9,12 @@
             = image_tag banner('960x300', image)
 :javascript
   $(window).load(function(){
-    $('#slider').nivoSlider();
+    $('#slider').nivoSlider({
+      effect: 'fade',
+      animSpeed: 500, 
+      pauseTime: 5000, 
+      directionNav: true, 
+      directionNavHide: false, 
+      controlNav: false 
+    });
   }); 

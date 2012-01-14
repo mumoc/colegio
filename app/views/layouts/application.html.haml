@@ -2,6 +2,7 @@
 %html
   %head
     %title Colegio
+    = stylesheet_link_tag href: 'http://fonts.googleapis.com/css?family=Trykker'
     = stylesheet_link_tag 'application'
     = javascript_include_tag 'application'
     = csrf_meta_tag
@@ -21,4 +22,4 @@
             = render partial: 'shared/sidebar'
       %footer#footer
         = yield :scripts
-        footer
+        Colegio de Médicos Oftalmólogos de Jalisco 2012

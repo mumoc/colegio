@@ -13,7 +13,13 @@
 
 :javascript
   $(document).ready(function() {
-    $('#ban-sidebar').nivoSlider({ controlNav: false });
+    $('#ban-sidebar').nivoSlider({
+      effect: 'fade',
+      animSpeed: 500, 
+      pauseTime: 5000, 
+      directionNav: false, 
+      controlNav: false
+    });
     $('#small-calendar').fullCalendar({
       theme: true,
       weekMode: 'variable',
