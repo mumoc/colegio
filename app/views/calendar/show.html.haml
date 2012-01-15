@@ -1,3 +1,4 @@
+%h1 Calendario - Día: #{dia}
 = paginate @day_events
 - @day_events.each do |event|
   = link_to event.title, event_path(event)
