@@ -1,0 +1,244 @@
+#slider {
+  width: 960px;
+  height: 300px;
+}
+
+#ban-sidebar {
+  width: 210px;
+  height: 300px;
+}
+
+#bsidebar {
+  padding-left: 10px;
+}
+
+#comercial {
+  width: 450px;
+  height: 300px;
+}
+.ligas, .ligas a {
+	color: #666;
+	font-size: 14px;
+	text-decoration: none;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: lighter;
+}
+
+
+h1 {
+	font-size: 24px;
+	font-family: 'Trykker', serif;
+	color: #d8594a;
+}
+
+
+h2 {
+	font-size: 18px;
+	font-family: 'Trykker', serif;	
+}
+
+
+#industria{
+	width: auto;	
+}
+
+#colegio{
+	width: auto;	
+}p {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+}
+
+
+.resaltar{
+	color: #666;
+	font-size: 14px;
+	text-decoration: none;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: bold;
+}
+
+
+#hor-zebra
+{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	
+	width:100%;
+	text-align: left;
+	border-collapse: collapse;
+}
+#hor-zebra th
+{
+	font-size: 14px;
+	font-weight: normal;
+	padding: 10px 8px;
+	color: #000;
+}
+#hor-zebra td
+{
+	padding: 8px;
+	color: #333;
+}
+#hor-zebra .odd
+{
+	background-color: #EBEBEB;
+}
+
+
+
+
+input, textarea {
+	padding: 9px;
+	border: solid 1px #E5E5E5;
+	outline: 0;
+	width: 200px;
+	background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	line-height: 100%;
+	font-weight: normal;
+	font-variant: normal;
+	}
+
+textarea { 
+	width: 280px;
+	max-width: 280px;
+	height: 150px;
+	line-height: 150%;
+	}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus { 
+	border-color: #C9C9C9; 
+	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+	}
+
+.form label { 
+	margin-left: 10px; 
+	color: #999999; 
+	}
+
+.submit input {
+	width: auto;
+	padding: 9px 15px;
+	background: #666;
+	border: 0;
+	font-size: 14px;
+	color: #FFFFFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	}
+
+#contacto{
+	width: auto;
+	
+}
+
+#contenedorforma{
+	width: 300px;
+	float: left;
+	background-color: #CCC;
+	padding: 10px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	
+}
+
+#ubicacion{
+	width: 360px;
+	float: left;
+	padding-left: 20px;
+}
+#escribenos{
+	width: 360px;
+	float: left;
+	padding-left: 0px;
+}
+
+#orden {
+	font-family: Tahoma, Geneva, sans-serif;
+	
+}
+#nombres-miembros a, #nombres-miembros ul li, #nombres-miembros ul li a{
+	text-decoration: none;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: #666;
+	list-style-image: url(images/bullet.gif);
+	list-style-type: square;
+	list-style-position: outside;
+}	
+.detalle-miembros {
+	width: 50%;
+	float: left;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+	
+
+
+#regresar-lista {
+	float: left;
+	width:80px;
+	background-color: #CCC;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	color: #333;
+	text-align: center;
+	height: 30px;
+	white-space: normal;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding-top: 10px;
+}
+#nombre-m {
+	font-size: 20px;
+	color: #333;
+}
+#correo-m, #correo-m a {
+	font-size: 14px;
+	color: #666;
+	padding-bottom: 10px;
+	text-decoration: none;
+}
+.cel-tel {
+	font-size: 18px;
+	color: #333;
+}
+.direccion-m {
+	font-size: 16px;
+	color: #666;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.mapa-miembro {
+	float: left;
+	padding-bottom: 20px;
+	padding-left: 0px;
+}
+#nombres-miembros {
+	padding: 0px;
+}
+
+#examples ul{
+  list-style: none;
+  li {
+    display: inline-block;
+    margin-right: 20px;
+    .color {
+      width: 15px;
+      height: 15px;
+      float: left;
+      margin-right: 5px;
+    }
+    .filiales { background: #fe0000;}
+    .congreso { background: #598526;}
+    .educacion { background: #458ccc;}
+    .sesiones { background: #aca000;}
+  }
+}
+
+

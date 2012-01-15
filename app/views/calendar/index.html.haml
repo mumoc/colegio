@@ -1,4 +1,20 @@
+%h1 Calendario
 #calendar
+#examples
+  %h2 Categorías
+  %ul
+    %li
+      .color.sesiones
+      Sesiones Ordinarias
+    %li
+      .color.educacion
+      Educación Continua
+    %li
+      .color.filiales
+      Filiales
+    %li
+      .color.congreso
+      Congreso
 #base-dialog
   #schedule
   #coordinator
@@ -15,22 +31,22 @@
       eventSources: [
         {
             url: '/event_dates/filiales.json', // use the `url` property
-            color: 'yellow',    // an option!
+            color: '#fe0000',    // an option!
             textColor: 'black'  // an option!
         },
         {
             url: '/event_dates/congreso.json', // use the `url` property
-            color: 'red',    // an option!
+            color: '#598526',    // an option!
             textColor: 'black'  // an option!
         },
         {
             url: '/event_dates/sesiones-ordinarias.json', // use the `url` property
-            color: 'blue',    // an option!
+            color: '#aca000',    // an option!
             textColor: 'black'  // an option!
         },
         {
             url: '/event_dates/educacion-continua.json', // use the `url` property
-            color: 'green',    // an option!
+            color: '#458ccc',    // an option!
             textColor: 'black'  // an option!
         }
       ],
