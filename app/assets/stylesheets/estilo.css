@@ -50,8 +50,21 @@ background-image: url(fondoMain.gif);
   padding: 20px;
 }
 #sidebar {
-	width: 235px;
+	width: 234px;
   float: right;
+  min-height: 320px;
+  -moz-box-shadow: inset 2px 0 2px #fff;
+  -webkit-box-shadow: inset 2px 0 2px #fff;
+  box-shadow: inner 2px 0 2px #fff;
+  border-left: 1px solid #eee;
+
+  background: #eeeeee; background: -moz-linear-gradient(left, #eeeeee 0%, #eeeeee 0%, #ffffff 88%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#eeeeee), color-stop(0%,#eeeeee), color-stop(88%,#ffffff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #eeeeee 0%,#eeeeee 0%,#ffffff 88%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #eeeeee 0%,#eeeeee 0%,#ffffff 88%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #eeeeee 0%,#eeeeee 0%,#ffffff 88%); /* IE10+ */
+  background: linear-gradient(left, #eeeeee 0%,#eeeeee 0%,#ffffff 88%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff',GradientType=1 ); /* IE6-8 */
 }
 
 #sidebar aside {
@@ -210,4 +223,5 @@ color: #333;
 #menu ul li ul li a:hover {
 	background-color: #CCC;
 }
+
 

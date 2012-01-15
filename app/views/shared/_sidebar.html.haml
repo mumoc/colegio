@@ -38,6 +38,12 @@
       viewDisplay: function(view) {
         $('#small-calendar').find('table').css('font-size','0.7em');
         $('#small-calendar').find('.ui-widget-content').css('border','none');
+        $('#small-calendar').find('.ui-widget-content').css('background','none');
+        today = $('#small-calendar').find('.ui-state-highlight');
+        today.css('background', 'none');
+        number = today.find('.fc-day-number');
+        number.css('color','#1e74c6');
+        number.css('font-weight', 'bold');
         $('#small-calendar').find('.fc-other-month').remove();
         $('#small-calendar').find('thead tr.fc-first th').css('border-right','none');
         $('#small-calendar').find('thead tr.fc-first th').css('padding-right','1px');
