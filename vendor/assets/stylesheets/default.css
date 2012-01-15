@@ -11,9 +11,10 @@ Author URI: http://dev7studios.com
 .theme-default .nivoSlider {
 	position:relative;
 	background:#fff url(loading.gif) no-repeat 50% 50%;
-  -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
-  -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
-  box-shadow: 0px 1px 5px 0px #4a4a4a;
+	-webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
+	-moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
+	box-shadow: 0px 1px 5px 0px #4a4a4a;
+	color: #CCC;
 }
 .theme-default .nivoSlider img {
 	position:absolute;
@@ -29,8 +30,8 @@ Author URI: http://dev7studios.com
 .theme-default .nivo-controlNav {
 	position:absolute;
 	left:50%;
-	bottom:-42px;
-    margin-left:-40px; /* Tweak this to center bullets */
+	bottom:0px;
+  margin-left:-50px; /* Tweak this to center bullets */
 }
 .theme-default .nivo-controlNav a {
 	display:block;
@@ -43,23 +44,23 @@ Author URI: http://dev7studios.com
 	float:left;
 }
 .theme-default .nivo-controlNav a.active {
-	background-position:0 -22px;
+	background-position:0 0px;
 }
 
 .theme-default .nivo-directionNav a {
 	display:block;
-	width:30px;
-	height:30px;
-	background:url(arrows.png) no-repeat;
+	width:62px;
+	height:128px;
+	background:url(arrowsCuadro.png) no-repeat;
 	text-indent:-9999px;
 	border:0;
 }
 .theme-default a.nivo-nextNav {
-	background-position:-30px 0;
-	right:15px;
+	background-position:-62px 0;
+	right:0px;
 }
 .theme-default a.nivo-prevNav {
-	left:15px;
+	left:0px;
 }
 
 .theme-default .nivo-caption {
