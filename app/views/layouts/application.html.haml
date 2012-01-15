@@ -14,10 +14,10 @@
       - if current 'home'
         = render partial: 'shared/main-slider' 
       #main
-        #left
+        #left{class: ('home' if current 'home')}
           %section{class: ('content' unless current('home'))}
             = yield
-        #sidebar
+        #sidebar{class: ('home' if current 'home')}
           %aside
             = render partial: 'shared/sidebar'
       %footer#footer

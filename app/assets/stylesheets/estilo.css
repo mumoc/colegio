@@ -16,7 +16,10 @@
 #header {
 height: 100px;
 background-image: url(fondoHome.gif);
+}
 
+.home {
+  height: 320px !important;
 }
 
 #logo {
@@ -43,7 +46,10 @@ background-image: url(fondoMain.gif);
 
 #left {
 	width: 725px;
+  height: 515px;
+  overflow-y: auto;
   float: left; 
+  background-image: url(fondoLeft.gif);
 }
 
 #left section.content {
@@ -51,6 +57,7 @@ background-image: url(fondoMain.gif);
 }
 #sidebar {
 	width: 234px;
+  height: 515px;
   float: right;
   min-height: 320px;
   -moz-box-shadow: inset 2px 0 2px #fff;
