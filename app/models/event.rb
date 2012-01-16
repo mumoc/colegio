@@ -8,6 +8,14 @@ class Event < ActiveRecord::Base
     "#{self.place}"
   end
 
+  def gmaps4rails_infowindow
+    "<h6>#{self.title}</h6>"
+  end
+
+  def gmaps4rails_title
+    "#{self.title}"
+  end
+
   def self.selected event_type
     event_type ? where(event_type: event_type) : all
   end

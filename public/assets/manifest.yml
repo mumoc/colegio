@@ -12,6 +12,7 @@ images/ui-icons_2e83ff_256x240.png: images/ui-icons_2e83ff_256x240-f4ef86290cf23
 images/ui-icons_454545_256x240.png: images/ui-icons_454545_256x240-7ce553e0b9fe2aa26bc3b9e0c7fd7518.png
 images/ui-icons_888888_256x240.png: images/ui-icons_888888_256x240-83461ac52221572349c65a2907601090.png
 images/ui-icons_cd0a0a_256x240.png: images/ui-icons_cd0a0a_256x240-5e404740e7b81db33ff68615256381c7.png
+bullet.gif: bullet-beef1e031bade9a2cad962f50749edcf.gif
 buzon-ref.jpg: buzon-ref-2151b4af0b4c1595642031053a861806.jpg
 fondoHome.gif: fondoHome-f362d60ae4ca9f5d1dddb77ac2eacdd7.gif
 fondoLeft.gif: fondoLeft-87129eceed30eaf0a7bee72540dffb2a.gif
@@ -21,7 +22,7 @@ logo.png: logo-efeddab068e523d58130320f441ab115.png
 admin/application.js: admin/application-d6c03004c3644316b353c7381326118a.js
 application.js: application-1055cd480ad4fdf3ac0ab42d0772b39a.js
 admin/application.css: admin/application-1c9609bc58b1e77c196de29021583379.css
-application.css: application-c02ddeb4845c5ab031bb99bb773394ed.css
+application.css: application-1f84955cca48eb3c41d7f9e3fd4f2022.css
 arrows.png: arrows-cddf7535dac4df32dd66bacacf5c1911.png
 arrowsCuadro.png: arrowsCuadro-842f9110fd545d768a6dd588f7aedce3.png
 bullets.png: bullets-ef89ea99141fdbbb5f7392aa23568232.png
