@@ -9,7 +9,7 @@ class Event < ActiveRecord::Base
   end
 
   def gmaps4rails_infowindow
-    "<h6>#{self.title}</h6>"
+    "<h5>#{self.title}</h5>"
   end
 
   def gmaps4rails_title

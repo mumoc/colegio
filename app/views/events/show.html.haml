@@ -1,5 +1,19 @@
-= @event.title
-%br
-= @event.schedule
+%h1 #{@event.title}
+%h5.event_type #{@event.event_type.titleize}
+%h4 Dirigido por: #{@event.coordinator}
+#data
+  %p
+    Lugar: #{@event.place}
+    %br
+    Dirección: #{@event.google_map}
+  %p
+    Fecha: 
+    = localized_date @event.event_date
+    %br
+    Horario: #{@event.schedule}
+    %br
+  %p
+    Descripción: #{@event.description}
+
 %br
 = gmaps(map_options: { zoom: 16, auto_adjust: true, auto_zoom: false }, markers: { data: @json } )

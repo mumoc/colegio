@@ -5,4 +5,8 @@ class Address < ActiveRecord::Base
   def gmaps4rails_address
     "#{self.street}, #{self.city}, #{self.state}, Mexico "
   end
+
+  def full_address
+    "Col. #{self.colony}, #{self.city}, #{self.state}"
+  end
 end

@@ -7,18 +7,18 @@
       = link_to @member.email, "mailto:#{@member.email}"
     #addresses
       - @member.addresses.each do |address|
-        .cel-tel
-          Tel: #{address.local_phone}
-        .cel-tel
-          Cel: #{address.cel_phone}
         .direccion-m
           %strong Dirección
           %br
           = address.street
           %br
-          = "Col. #{@member.address.colony}"
+          = address.full_address
+          %br
+          = "Tel: #{number_to_phone(address.local_phone, area_code: true)}"
+          %br
+          = "Cel: #{number_to_phone(address.cel_phone, area_code: true)}"
 
 .mapa-miembro
   = gmaps(map_options: {auto_adjust: true, auto_zoom: true }, markers: { data: @json } )
   
-= link_to 'Ver lista', members_path, id: 'regresar-lista'
+= link_to 'Directorio', members_path, id: 'regresar-lista'

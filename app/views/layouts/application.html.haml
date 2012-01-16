@@ -10,6 +10,8 @@
     #container.clearfix
       %header#header
         #logo
+          = link_to root_path do
+            = image_tag 'logo.png'
         = render partial: 'shared/menu'
       - if current 'home'
         = render partial: 'shared/main-slider' 

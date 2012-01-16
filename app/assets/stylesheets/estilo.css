@@ -14,8 +14,9 @@
 
 
 #header {
-height: 100px;
-background-image: url(fondoHome.gif);
+  height: 100px;
+  background-image: url(fondoHome.gif);
+  border-bottom: 1px dashed lightgray;
 }
 
 .home {
@@ -23,8 +24,6 @@ background-image: url(fondoHome.gif);
 }
 
 #logo {
-	background-image: url(logo.png);
-	background-repeat: no-repeat;
 	height: 73px;
 	top: 15px;
 	position: relative;

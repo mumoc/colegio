@@ -49,6 +49,12 @@ h2.side-title {
   border-bottom: 1px solid gray;
 }
 
+h5.event_type {
+  margin: 5px;
+  border-top: 1px solid #D8594A;
+  color: #D8594A;
+  text-align: right;
+}
 
 #industria{
 	width: auto;	
@@ -233,6 +239,7 @@ input:focus, textarea:focus {
 	float: left;
 	padding-bottom: 20px;
 	padding-left: 0px;
+  width: 100%;
 }
 #nombres-miembros {
 	padding: 0px;
