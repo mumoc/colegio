@@ -9,7 +9,7 @@ class Message < ActionMailer::Base
 
   def suggestion sender, message
     mail(:to => 'mumo.crls@gmail.com', :subject => "Test Suggestion") do |format|
-      format.html { render 'suggestions', :locals => {:message => message, :sender => sender} }
+      format.html { render 'suggestions', :locals => {:sender => sender, :message => message} }
     end
   end
 end

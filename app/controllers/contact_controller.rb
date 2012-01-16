@@ -13,7 +13,7 @@ class ContactController < ApplicationController
 
   def create
     message = params[:text]
-    Message.suggestion(message, current_member.first_name).deliver
+    Message.suggestion(current_member.first_name, message).deliver
     redirect_to root_path
   end
 end
