@@ -56,7 +56,7 @@
         $('#small-calendar').find('thead tr.fc-first th').css('border-left','none');
        },
       eventClick: function(event, jsEvent, view) {
-        var event_date = "/calendar/day/" + $.fullCalendar.formatDate( event.start, "yyyy-MM-dd");
+        var event_date = "/calendario/dia/" + $.fullCalendar.formatDate( event.start, "yyyy-MM-dd");
         window.location = event_date;
       }
     });

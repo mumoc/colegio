@@ -85,7 +85,7 @@
         dialog.find('#schedule > p.schedule').html(event.schedule);
         dialog.find('#place > p > span.place').html(event.place);
         dialog.find('#place > p > span.map').html(event.map);
-        dialog.find('#details > a').attr('href', '/events/' + event.slug)
+        dialog.find('#details > a').attr('href', '/eventos/' + event.slug)
         dialog.dialog('option', 'title', event.title);
         dialog.dialog('open');
         return false;
