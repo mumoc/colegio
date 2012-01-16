@@ -34,7 +34,7 @@ class Event < ActiveRecord::Base
     unless ActiveRecord::Base.connection.adapter_name == 'PostgreSQL' 
       dates = dates.group(:event_date)
     else
-      dates = dates.select('DISTINCT ON (events.event_date) events.title, events.description, events.coordinator, events.event_type, events.place, events.schedule, events.google_map, events.event_date')
+      dates = dates.select('DISTINCT ON (events.event_date) events.title, events.description, events.coordinator, events.event_type, events.place, events.schedule, events.google_map, events.event_date, events.slug')
     end
   end
 end
