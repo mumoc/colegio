@@ -256,6 +256,33 @@ input:focus, textarea:focus {
 #sign-form {
   margin-bottom: 15px;
   text-align: right;
+
+  h3 {
+    padding-left: 20px;
+    color: #999;
+    text-shadow: 3px 2px 0px #E5E5EE;
+    font-family: 'Trykker', serif;
+    font-weight: lighter;
+
+    &.welcome{
+      text-align: center;
+      font-size: 17px;
+      border-bottom: 1px solid #999;
+      width: 80%;
+      margin: 0 auto;
+    }
+    &.member {
+      font-size: 15px;
+      text-align: left;
+      span {
+        font-size: 13px;
+        display: block;
+        padding-left: 20px;
+      }
+    }
+  }//h3
+
+
   form {
     margin-right: 8px;
     input {

@@ -1,6 +1,10 @@
 - if member_signed_in?
-  = current_member.last_name
-  = link_to('Log Out', destroy_member_session_path, :method => :delete)
+  %h3.welcome Bienvenido:
+  %h3.member 
+    = current_member.full_name
+    %span
+      = current_member.email
+  = button_to('Log Out', destroy_member_session_path, :method => :delete)
 - else
   = form_tag member_session_path do
     /= label_tag 'member[email]', 'Email'
