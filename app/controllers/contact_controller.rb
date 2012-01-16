@@ -1,5 +1,6 @@
 class ContactController < ApplicationController
-  
+  before_filter :authenticate_member!, :except => :public_contact
+
   def public_contact
     sender = { name: params[:nombre], email: params[:email], tel: params[:tel] }
     message = params[:text]
