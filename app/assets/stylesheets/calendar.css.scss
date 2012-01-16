@@ -1,0 +1,13 @@
+#calendar {
+  .fc-day-number {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    padding-left: 5px;
+  }
+
+  thead tr th {
+    border: none;
+    background: none;
+    border-bottom: 1px solid #AAA;
+  }
+}

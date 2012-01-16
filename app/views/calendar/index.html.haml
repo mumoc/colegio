@@ -28,6 +28,7 @@
     $('#calendar').fullCalendar({
       theme: true,
       weekMode: 'variable',
+      firstDay: 1,
       dayNamesShort: ['Dom', 'Lun', 'Mar', 'Mié','Jue', 'Vie', 'Sab'],
       monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio','Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
       buttonText: {
@@ -70,7 +71,7 @@
         inner = element.find('.fc-event-inner');
         inner.attr('style','color: black;');
         inner.html('');
-        inner.prepend('<div class="color" style="background:' + style +  ';"></div>')
+        inner.prepend('<div class="color" style="background:' + style +  ';"></div>');
         inner.append(title);
         inner.find('.fc-event-title').html(short_title);    
       },

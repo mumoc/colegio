@@ -46,7 +46,7 @@ background-image: url(fondoMain.gif);
 
 #left {
 	width: 725px;
-  height: 675px;
+  height: 753px;
   overflow-y: auto;
   float: left; 
   background-image: url(fondoLeft.gif);
@@ -57,7 +57,7 @@ background-image: url(fondoMain.gif);
 }
 #sidebar {
 	width: 234px;
-  height: 675px;
+  height: 753px;
   float: right;
   min-height: 320px;
   -moz-box-shadow: inset 2px 0 2px #fff;
