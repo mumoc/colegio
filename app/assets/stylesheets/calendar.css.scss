@@ -1,3 +1,6 @@
+.fc-event-inner:hover {
+  cursor: pointer;
+}
 #calendar {
   .fc-day-number {
     width: 100%;
@@ -15,5 +18,8 @@
 #small-calendar {
   .fc-day-number {
     text-align: center;
+  }
+  .fc-event-inner {
+    background: url('big-star.png') no-repeat center;
   }
 }
