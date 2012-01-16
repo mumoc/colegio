@@ -17,14 +17,20 @@
       Congreso
 #base-dialog
   #schedule
-  #coordinator
+    Hora:
+    %p.schedule
   #place
-  #data
+    Lugar:
+    %p
+      %span.place   
+      %span.map
+  #details
+    = link_to 'Detalles', '#'
 
 
 :javascript
   $(document).ready(function() {
-    $('#base-dialog').dialog({ autoOpen:false });
+    $('#base-dialog').dialog({ autoOpen:false, resizable: false, minWidth: 400, minHeight: 220 });
     $('#calendar').fullCalendar({
       theme: true,
       weekMode: 'variable', 
@@ -75,14 +81,11 @@
         inner.find('.fc-event-title').html(short_title);    
       },
       eventClick: function(event) {
-        dialog = $('#base-dialog');
-        dialog.attr('data-id',event.id);
-        dialog.find('#schedule').html(event.schedule);
-        dialog.find('#coordinator').html(event.coordinator);
-        dialog.find('#place').html(event.place);
-        var sluged_title = event.title.replace(/ /g ,'-').toLowerCase();
-        var event_link = "<a href=/events/" + sluged_title + ">Details</a>";
-        dialog.find('#data').html(event_link);
+        dialog = $('#base-dialog');        
+        dialog.find('#schedule > p.schedule').html(event.schedule);
+        dialog.find('#place > p > span.place').html(event.place);
+        dialog.find('#place > p > span.map').html(event.map);
+        dialog.find('#details > a').attr('href', '/events/' + event.slug)
         dialog.dialog('option', 'title', event.title);
         dialog.dialog('open');
         return false;

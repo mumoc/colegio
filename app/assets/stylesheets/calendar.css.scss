@@ -15,6 +15,39 @@
   }
 }
 
+#base-dialog {
+  font-size: 14px;
+  color: #333;
+  p {
+    color: #666;
+  }
+  #schedule {
+    padding: 5px 0;
+    p.schedule { display: inline; }
+  }
+  #place {
+    margin-top: 5px;
+    p { margin: 0px;}
+    span {
+      display: inline-block;
+      width: 100%;
+      &.place { 
+        font-size: 18px;
+        padding: 5px 0;
+      }
+    }
+  }
+  #details {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px 10px;    
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
 #small-calendar {
   .fc-day-number {
     text-align: center;

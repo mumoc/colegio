@@ -5,7 +5,7 @@ class Event < ActiveRecord::Base
   acts_as_gmappable
 
   def gmaps4rails_address
-    "#{self.place}"
+    "#{self.google_map}"
   end
 
   def gmaps4rails_infowindow
