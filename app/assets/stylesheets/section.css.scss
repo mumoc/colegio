@@ -276,8 +276,11 @@ input:focus, textarea:focus {
       text-align: left;
       span {
         display: block;
-        padding-left: 20px;
-        &.mail {font-size: 13px;}
+        padding-left: 10px;
+        &.mail {
+          font-size: 10px;
+          padding-left: 20px;
+        }
       }
     }
   }//h3
