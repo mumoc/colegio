@@ -19,7 +19,7 @@ background-image: url(fondoHome.gif);
 }
 
 .home {
-  height: 320px !important;
+  height: 480px !important;
 }
 
 #logo {
@@ -46,7 +46,7 @@ background-image: url(fondoMain.gif);
 
 #left {
 	width: 725px;
-  height: 753px;
+  height: 790px;
   overflow-y: auto;
   float: left; 
   background-image: url(fondoLeft.gif);
@@ -57,7 +57,7 @@ background-image: url(fondoMain.gif);
 }
 #sidebar {
 	width: 234px;
-  height: 753px;
+  height: 790px;
   float: right;
   min-height: 320px;
   -moz-box-shadow: inset 2px 0 2px #fff;
@@ -72,6 +72,7 @@ background-image: url(fondoMain.gif);
   background: -ms-linear-gradient(left, #eeeeee 0%,#eeeeee 0%,#ffffff 88%); /* IE10+ */
   background: linear-gradient(left, #eeeeee 0%,#eeeeee 0%,#ffffff 88%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff',GradientType=1 ); /* IE6-8 */
+ 
 }
 
 #sidebar aside {

@@ -37,6 +37,13 @@ h2 {
 	font-family: 'Trykker', serif;	
 }
 
+h2.side-title {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  background-color: gray;
+}
+
 
 #industria{
 	width: auto;	
@@ -229,6 +236,10 @@ input:focus, textarea:focus {
     display: inline-block;
     margin-right: 20px;
   }
+}
+
+#sign-form {
+  margin-bottom: 15px;
 }
 
 .color {

@@ -48,6 +48,9 @@ module Colegio
     #Dragonfly Config
     config.middleware.insert 1, 'Dragonfly::Middleware', :images
 
+    config.assets.initialize_on_precompile = false
+
+
     #
     initializer :add_jquery_ui_asset_base, :group => :all, :after => :append_assets_path do
       config.assets.paths.unshift Rails.root.join("vendor", "assets", "stylesheets", "smoothness").to_s

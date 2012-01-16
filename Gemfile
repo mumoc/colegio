@@ -13,7 +13,7 @@ gem 'cocoon'
 gem 'kaminari'
 gem 'has_scope'
 gem 'gmaps4rails'
-
+gem 'devise'
 gem 'inherited_resources'
 gem "simple_form"
 gem "friendly_id", "~> 4.0.0"

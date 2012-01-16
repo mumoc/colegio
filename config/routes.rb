@@ -1,4 +1,6 @@
 Colegio::Application.routes.draw do
+  devise_for :members
+
   root to: 'home#index'
   match '/home/download' => 'home#download'
   match '/calendar/day/:event_date' => 'calendar#show', :as => 'day_events'
