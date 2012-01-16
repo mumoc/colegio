@@ -13,6 +13,14 @@
     padding-left: 5px;
   }
 
+  .fc-other-month .fc-day-content { 
+    padding: 0px;
+    div{
+      height: 59px;
+      background: rgba(50, 50, 50, 0.2);
+    }
+  }
+
   thead tr th {
     border: none;
     background: none;
@@ -63,8 +71,11 @@
   }
   .fc-event-inner {
     background: url('big-star.png') no-repeat center;
+    height: 14px; 
   }
-
+  .fc-day-content {
+  
+  }
   .fc-header-title {
     h2 { font-size: 14px; }
   }
