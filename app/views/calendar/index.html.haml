@@ -57,14 +57,22 @@
       ],
       eventRender: function(event, element) {
         var short_title = '';
-        if ((event.title.length - 15) > 0)  {
-          short_title = event.title.substring(0,15) + '...';
+        if ((event.title.length - 6) > 0)  {
+          short_title = event.title.substring(0,6) + '...';
         }
         else{
-          short_title = event.title
+          short_title = event.title;
         }
-
-        element.find('.fc-event-title').html(short_title);    
+        style = element.css('background-color');
+        title = element.find('.fc-event-title');
+        element.css('background-color','transparent');
+        element.css('border','');
+        inner = element.find('.fc-event-inner');
+        inner.attr('style','color: black;');
+        inner.html('');
+        inner.prepend('<div class="color" style="background:' + style +  ';"></div>')
+        inner.append(title);
+        inner.find('.fc-event-title').html(short_title);    
       },
       eventClick: function(event) {
         dialog = $('#base-dialog');

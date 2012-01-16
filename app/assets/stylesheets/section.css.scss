@@ -228,17 +228,19 @@ input:focus, textarea:focus {
   li {
     display: inline-block;
     margin-right: 20px;
-    .color {
-      width: 15px;
-      height: 15px;
-      float: left;
-      margin-right: 5px;
-    }
-    .filiales { background: #fe0000;}
-    .congreso { background: #598526;}
-    .educacion { background: #458ccc;}
-    .sesiones { background: #aca000;}
   }
 }
 
+.color {
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin-right: 5px;
+  border: 1px solid gray;
+  border-radius: 2px;
+}
+.filiales { background: #fe0000;}
+.congreso { background: #598526;}
+.educacion { background: #458ccc;}
+.sesiones { background: #aca000;}
 
