@@ -5,7 +5,7 @@ class ContactController < ApplicationController
     sender = { name: params[:nombre], email: params[:email], tel: params[:tel] }
     message = params[:text]
     Message.contact_mail(sender, message).deliver
-    redirect_to root_path
+    redirect_to root_es_path
   end
 
   def new
@@ -14,6 +14,6 @@ class ContactController < ApplicationController
   def create
     message = params[:text]
     Message.suggestion(current_member.first_name, message).deliver
-    redirect_to root_path
+    redirect_to root_es_path
   end
 end

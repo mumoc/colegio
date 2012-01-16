@@ -11,13 +11,13 @@ Colegio::Application.routes.draw do
   match '/colegio/:id' => 'static#show', as: 'colege'
   match '/industria' => 'static#show', id: 'industria', as: 'industry'
   match '/contacto' => 'static#show', id: 'contacto', as: 'contact'
-  
+  match '/sugerencias' => 'contact#new', as: 'suggestions'
+  match 'new_suggestion' => 'contact#create', as: 'new_suggestion', via: :post
   match 'public_contact' => 'contact#public_contact', :as => 'public_contact', :via => :post
 
   resources :events
   resources :members
   resources :calendar 
-  resources :contact
 
   namespace :admin do
     root to: 'events#index'
