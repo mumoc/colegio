@@ -1,8 +1,10 @@
 - if member_signed_in?
   %h3.welcome Bienvenido:
   %h3.member 
-    = current_member.full_name
+    = "#{current_member.title} #{current_member.first_name}"
     %span
+      = current_member.last_name
+    %span.mail
       = current_member.email
   = button_to('Log Out', destroy_member_session_path, :method => :delete)
 - else
