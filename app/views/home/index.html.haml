@@ -10,7 +10,8 @@
 #foro
   = image_tag 'foro-ref.jpg'
 #buzon
-  = image_tag 'buzon-ref.jpg'
+  = link_to new_contact_path do
+    = image_tag 'buzon-ref.jpg'
 
 :javascript
   $(window).load(function(){

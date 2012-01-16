@@ -1,0 +1,8 @@
+#sugerencias
+  %h1 Sugerencias
+  #contenedorforma
+    = form_tag contact_index_path, class: 'form' do
+      %p.text
+        = text_area_tag 'text'
+      %p.submit
+        = submit_tag 'Enviar'
