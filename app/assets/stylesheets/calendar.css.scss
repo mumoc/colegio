@@ -11,3 +11,9 @@
     border-bottom: 1px solid #AAA;
   }
 }
+
+#small-calendar {
+  .fc-day-number {
+    text-align: center;
+  }
+}
