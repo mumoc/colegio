@@ -1,13 +1,13 @@
 - if member_signed_in?
   = current_member.last_name
-  = link_to('Logout', destroy_member_session_path, :method => :delete)
+  = link_to('Log Out', destroy_member_session_path, :method => :delete)
 - else
   = form_tag member_session_path do
-    = label_tag 'member[email]', 'Email'
-    = text_field_tag 'member[email]'
-    = label_tag 'member[password]', 'Password:'
-    = password_field_tag 'member[password]'
-    = check_box_tag 'member[remember_me]'
-    = label_tag 'member[remember_me]', 'Remember me'
-    %button Sign in
+    /= label_tag 'member[email]', 'Email'
+    = text_field_tag 'member[email]',nil, placeholder: 'Email'
+    /= label_tag 'member[password]', 'Password:'
+    = password_field_tag 'member[password]',nil, placeholder: 'Password'
+    /= check_box_tag 'member[remember_me]'
+    /= label_tag 'member[remember_me]', 'Remember me'
+    = submit_tag 'Sign In'
 

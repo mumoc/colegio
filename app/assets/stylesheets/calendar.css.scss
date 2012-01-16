@@ -1,6 +1,11 @@
 .fc-event-inner:hover {
   cursor: pointer;
 }
+
+.fc-header-title {
+  font-weight: lighter;
+  color: #999;
+}
 #calendar {
   .fc-day-number {
     width: 100%;
@@ -12,6 +17,10 @@
     border: none;
     background: none;
     border-bottom: 1px solid #AAA;
+  }
+
+  .fc-header-title {
+    h2 { font-size: 18px; }
   }
 }
 
@@ -54,5 +63,9 @@
   }
   .fc-event-inner {
     background: url('big-star.png') no-repeat center;
+  }
+
+  .fc-header-title {
+    h2 { font-size: 14px; }
   }
 }
