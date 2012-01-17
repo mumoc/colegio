@@ -25,6 +25,12 @@
   border-bottom: 1px dashed lightgray;
 }
 
+#header a.active {
+  color: white;
+  font-style: oblique;
+  text-shadow: 1px 1px 0px #ccc;
+}
+
 #logo {
 	height: 73px;
 	top: 15px;
@@ -111,7 +117,6 @@ body {
 	margin: 0px;
 	padding: 0px;
 }
-
 
 .clearfix:after {
 	content:".";
