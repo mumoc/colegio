@@ -15,6 +15,7 @@ images/ui-icons_cd0a0a_256x240.png: images/ui-icons_cd0a0a_256x240-5e404740e7b81
 big-star.png: big-star-d1e84677bc0c7bc7337e23ebaa00d9ba.png
 bullet.gif: bullet-beef1e031bade9a2cad962f50749edcf.gif
 buzon-ref.jpg: buzon-ref-2151b4af0b4c1595642031053a861806.jpg
+buzonLogo.gif: buzonLogo-9b2fe7dc82377032839e66cc9d8cda4f.gif
 fondoHome.gif: fondoHome-f362d60ae4ca9f5d1dddb77ac2eacdd7.gif
 fondoLeft.gif: fondoLeft-87129eceed30eaf0a7bee72540dffb2a.gif
 fondoMain.gif: fondoMain-9a89288c6135d5159b8a1b7ffe8fcbc2.gif
@@ -23,7 +24,7 @@ logo.png: logo-efeddab068e523d58130320f441ab115.png
 admin/application.js: admin/application-d6c03004c3644316b353c7381326118a.js
 application.js: application-1055cd480ad4fdf3ac0ab42d0772b39a.js
 admin/application.css: admin/application-1c9609bc58b1e77c196de29021583379.css
-application.css: application-a58a1d9c218038c55b6e11838320d2b8.css
+application.css: application-882fd0f77b4792c1996f4312df22ef50.css
 arrows.png: arrows-cddf7535dac4df32dd66bacacf5c1911.png
 arrowsCuadro.png: arrowsCuadro-842f9110fd545d768a6dd588f7aedce3.png
 bullets.png: bullets-ef89ea99141fdbbb5f7392aa23568232.png
