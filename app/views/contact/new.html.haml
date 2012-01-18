@@ -1,8 +1,13 @@
 #sugerencias
   %h1 Sugerencias
-  #contenedorforma
+  #textoSugerencias
+    %p.nombre-eventos
+      ¿Tienes dudas o sugerencias?
+    %p
+      Este es un espacio para ti, envíanos tus comentarios.
+  #contenedorSugerencia
     = form_tag new_suggestion_path, class: 'form' do
-      %p.text
-        = text_area_tag 'text'
+      %p.text2
+        = text_area_tag 'text',nil, class: 'textareaSugerencias'
       %p.submit
         = submit_tag 'Enviar'

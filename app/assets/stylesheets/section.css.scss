@@ -171,14 +171,23 @@ input:focus, textarea:focus {
 }
 
 #ubicacion{
-	width: 360px;
+	width: 340px;
 	float: left;
-	padding-left: 20px;
+	padding-left: 15px;
+  #mapa {
+    .map_container {
+      width: 340px;
+      .gmaps4rails_map {
+        width: 335px;
+        height: 220px;
+      }
+    }
+  }
 }
 #escribenos{
-	width: 360px;
+	width: 340px;
 	float: left;
-	padding-left: 0px;
+	padding-left: 5px;
 }
 
 #orden {

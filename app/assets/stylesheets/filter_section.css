@@ -310,3 +310,49 @@ h4 {
 	text-decoration: none;
 	color: #333;
 }
+
+#contenedorSugerencias{
+	width: 560px;
+	background-color: #CCC;
+	padding: 10px;
+	-webkit-border-bottom-right-radius: 5px;
+-webkit-border-bottom-left-radius: 5px;
+-moz-border-radius-bottomright: 5px;
+-moz-border-radius-bottomleft: 5px;
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+	margin: auto;	
+}
+#sugerencias{
+	width: auto;
+}
+
+.textareaSugerencias {
+	width: 540px;
+	max-width: 540px;
+	height: 150px;
+	line-height: 150%;
+	margin-right: auto;
+	margin-left: auto;
+	
+	}
+
+#textoSugerencias{
+	width: 540px;
+	background-color: #8dffff;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin: auto;
+	height: 90px;
+	background-image: url(buzonLogo.gif);
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}		
