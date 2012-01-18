@@ -6,19 +6,20 @@
   font-weight: lighter;
   color: #999;
 }
+
 #calendar {
   .fc-day-number {
     width: 100%;
-    border-bottom: 1px solid gray;
+    background: rgba(255, 255, 255, 0.5);
     padding-left: 5px;
   }
 
-  .fc-other-month .fc-day-content { 
-    padding: 0px;
-    div{
-      height: 59px;
-      background: rgba(50, 50, 50, 0.2);
-    }
+  .fc-other-month{ 
+    background: rgba(50, 50, 50, 0.2);
+  }
+
+  .fc-day-content {
+    border-top: 1px solid gray;
   }
 
   thead tr th {
@@ -71,9 +72,6 @@
   }
   .fc-event-inner {
     background: url('big-star.png') no-repeat center; 
-  }
-  .fc-day-content {
-  
   }
   .fc-header-title {
     h2 { font-size: 14px; }
