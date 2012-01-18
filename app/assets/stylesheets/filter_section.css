@@ -161,7 +161,7 @@ input:focus, textarea:focus {
 	text-decoration: none;
 	font-family: Tahoma, Geneva, sans-serif;
 	color: #666;
-	list-style-image: url(images/bullet.gif);
+	list-style-image: url(bullet.gif);
 	list-style-type: square;
 	list-style-position: outside;
 }	
