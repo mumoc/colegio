@@ -1,6 +1,7 @@
 class MembersController < ApplicationController
   def index
-    @members = Member.page(params[:page])
+    members = params[:letter].nil? ? Member : Member.where('UPPER(last_name) like ?', "#{params[:letter].upcase}%")
+    @members = members.page(params[:page])
   end
 
   def show

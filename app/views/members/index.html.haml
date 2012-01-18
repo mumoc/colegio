@@ -1,7 +1,7 @@
 #directorio
   %h1 Directorio
-  .orden
-    = paginate @members
+  = render partial: 'filter_menu'
+  = paginate @members
   .miembros
     #nombres-miembros
       %ul
