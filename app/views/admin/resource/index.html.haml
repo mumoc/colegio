@@ -1,7 +1,1 @@
-%h2= resource_class.to_s.pluralize
-.action-links
-  %ul
-    %li= link_to "New #{resource_class}", new_resource_path
-
-= paginate collection
 = render 'index', attributes: attributes
