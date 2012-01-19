@@ -1,19 +1,36 @@
-%h1 #{@event.title}
-%h5.event_type #{@event.event_type.titleize}
-%h4 Dirigido por: #{@event.coordinator}
 #data
-  %p
-    Lugar: #{@event.place}
+  .item-data
+    %p
+      %span.fecha-evento
+        Dirigido por: 
+      %br
+      = @event.coordinator
+      %br
+  .item-data
+    %span.fecha-evento
+      Lugar:
     %br
-    Dirección: #{@event.google_map}
-  %p
-    Fecha: 
+    = @event.place
+  .item-data
+    %span.fecha-evento
+      Dirección:
+    %br
+    = @event.google_map
+    %br
+  .item-data
+    %span.fecha-evento
+      Fecha:
     = localized_date @event.event_date
     %br
-    Horario: #{@event.schedule}
+  .item-data
+    %span.fecha-evento
+      Horario:
+    = @event.schedule
     %br
-  %p
-    Descripción: #{@event.description}
-
+  .item-data
+    %span.fecha-evento
+      Descripción:
+    %br
+    = @event.description
 %br
 = gmaps(map_options: { zoom: 16, auto_adjust: true, auto_zoom: false }, markers: { data: @json } )
