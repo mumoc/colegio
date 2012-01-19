@@ -1,8 +1,19 @@
+= link_to 'Calendario', calendar_index_path, id: 'regresar-lista', style: 'float:right;'
 %h1 Calendario
 %h3 Día: #{localized_date dia}
 = paginate @day_events
-- @day_events.each do |event|
-  = link_to event.title, event_path(event)
-%br
-%br
-= link_to 'Ver Calendario', calendar_index_path
+.eventos
+  .nombres-eventos
+    %ul
+      - @day_events.each do |event|
+        %li
+          .lista-eventos
+            %a{href: event_path(event)}
+              %span.fecha-evento
+                = localized_date event.event_date
+              %br
+              %span.nombre-eventos
+                = event.title
+              %br
+              %span.cordinador-eventos
+                = event.coordinator
