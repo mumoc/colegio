@@ -2,7 +2,7 @@ class Event < ActiveRecord::Base
   extend FriendlyId
   friendly_id :title, use: :slugged
   
-  acts_as_gmappable
+  acts_as_gmappable check_process: false
 
   def gmaps4rails_address
     "#{self.google_map}"
