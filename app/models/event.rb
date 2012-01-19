@@ -1,4 +1,5 @@
 class Event < ActiveRecord::Base
+  default_scope order('events.event_date DESC')
   extend FriendlyId
   friendly_id :title, use: :slugged
   
