@@ -6,6 +6,9 @@
       = current_member.last_name
     %span.mail
       = current_member.email
+    %span.mail
+      = link_to 'Sugerencias', suggestions_path
+
   = button_to('Log Out', destroy_member_session_path, :method => :delete)
 - else
   = form_tag member_session_path do

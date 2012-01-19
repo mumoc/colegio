@@ -1,3 +1,4 @@
+= link_to 'Directorio', members_path, id: 'regresar-lista', style: 'float:right;'
 #detalle
   %h1 Directorio
   .detalle-miembros
@@ -20,5 +21,3 @@
 
 .mapa-miembro
   = gmaps(map_options: {auto_adjust: true, auto_zoom: true }, markers: { data: @json } )
-  
-= link_to 'Directorio', members_path, id: 'regresar-lista'
