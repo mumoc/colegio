@@ -29,5 +29,10 @@ Colegio::Application.routes.draw do
     resources :banners
   end
 
+  namespace :mobile do
+    root to: 'dashboard#index'
+    resources :calendar
+  end
+
   ActionDispatch::Routing::Translator.translate_from_file('config/locales/routes.yml')
 end

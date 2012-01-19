@@ -1,0 +1,44 @@
+- title = "Colegio de Oftalmólogos de Jalisco"
+
+%div{:id => mobile_page_id, :data => {:role => 'page', :title => title}}
+
+  %div{:data => {:role => 'header'}}
+    %h1 Calendario
+  %div{:data => {:role => 'content'}}
+    #calendar
+  %div{:data => {:role => 'footer'}}
+    %h2 Colegio de Médicos Oftalmólogos de Jalisco
+:javascript
+  $(document).ready(function() { 
+    $('#calendar').fullCalendar({
+      theme: falsee,
+      weekMode: 'variable', 
+      dayNamesShort: ['Dom', 'Lun', 'Mar', 'Mié','Jue', 'Vie', 'Sab'],
+      monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio','Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+      buttonText: {
+        today:      'Hoy'
+      },
+      eventSources: [
+        {
+            url: '/event_dates/filiales.json', // use the `url` property
+            color: '#fe0000',    // an option!
+            textColor: 'black'  // an option!
+        },
+        {
+            url: '/event_dates/congreso.json', // use the `url` property
+            color: '#598526',    // an option!
+            textColor: 'black'  // an option!
+        },
+        {
+            url: '/event_dates/sesiones-ordinarias.json', // use the `url` property
+            color: '#aca000',    // an option!
+            textColor: 'black'  // an option!
+        },
+        {
+            url: '/event_dates/educacion-continua.json', // use the `url` property
+            color: '#458ccc',    // an option!
+            textColor: 'black'  // an option!
+        }
+      ]
+    });
+  });

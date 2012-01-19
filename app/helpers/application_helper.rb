@@ -1,4 +1,6 @@
 module ApplicationHelper
+  include MobileConcerns::Helpers
+
   def current name
     params[:controller].match name
   end
