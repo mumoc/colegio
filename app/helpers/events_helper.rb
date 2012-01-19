@@ -4,6 +4,6 @@ module EventsHelper
   end
 
   def localized_date date
-    l(date, format: :fecha).titleize
+    l(date, format: :long).humanize
   end
 end
