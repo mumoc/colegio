@@ -264,8 +264,6 @@ input:focus, textarea:focus {
 
 #sign-form {
   margin-bottom: 10px;
-  text-align: right;
-
   h3 {
     padding-left: 20px;
     color: #999;
@@ -282,21 +280,16 @@ input:focus, textarea:focus {
     }
     &.member {
       font-size: 15px;
-      text-align: left;
       span {
         display: block;
-        padding-left: 10px;
-        &.mail {
-          font-size: 10px;
-          padding-left: 20px;
-        }
+        &.mail { font-size: 10px; }
       }
     }
   }//h3
 
 
   form {
-    margin-right: 8px;
+    margin-left: 20px;
     input {
       font-family: 'Trykker', serif;
       font-size: 12px;
