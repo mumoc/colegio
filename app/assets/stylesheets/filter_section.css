@@ -143,20 +143,44 @@ input:focus, textarea:focus {
 }
 
 #filtro {
-	
-	background-color: #CCC;
-	font-family: Tahoma, Geneva, sans-serif;
-	font-size: 14px;
-	color: #fff;
-	text-align: center;
+padding: 5px;	
+height: 60px;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 14px;
+color: white;
+padding-right: 10px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+text-decoration: none;
+background-color: #999;
 
-	white-space: normal;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	padding:1px;
-	text-decoration: none;
-	
 }
+#filtro #paginacion {
+  background-color: none !important;
+}
+
+#filtro #paginacion ul {
+  border: none;
+  margin-top: 5px;
+text-align: right;
+margin-right: 17px;
+}
+
+#filtro h2 {
+  float: left;
+  font-size: 45px;
+  margin: 2px 0 0 10px;
+}
+
+#filtro ul {
+  border-bottom: 1px solid white;
+  display: block;
+  overflow: hidden;
+  width: 450px;
+  float: right;
+  margin-bottom: 0;
+}
+
 #nombres-miembros a, #nombres-miembros ul li, #nombres-miembros ul li a{
 	text-decoration: none;
 	font-family: Tahoma, Geneva, sans-serif;
@@ -275,6 +299,7 @@ h4 {
 }
 #filtro ul li {
 	display: inline;
+  padding-right: 2px;
 }
 
 

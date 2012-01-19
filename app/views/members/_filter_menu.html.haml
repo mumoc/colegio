@@ -1,7 +1,10 @@
 #filtro
+  %h2
+    = params[:letter]
   %ul
     - ('A'..'Z').to_a.each do |letter|
       %li
         = link_to letter, filter_members_path(letter)
     %li
       = link_to 'Todos', members_path
+  = paginate @members
