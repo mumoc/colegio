@@ -1,6 +1,5 @@
 = link_to 'Calendario', calendar_index_path, id: 'regresar-lista', style: 'float:right;'
 %h1 Calendario
-%h3 Día: #{localized_date dia}
 = paginate @day_events
 .eventos
   .nombres-eventos
