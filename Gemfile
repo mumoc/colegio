@@ -18,6 +18,7 @@ gem 'devise'
 gem 'inherited_resources'
 gem "simple_form"
 gem "friendly_id", "~> 4.0.0"
+gem 'rails-translate-routes'
 gem 'forem', :git => "git://github.com/radar/forem.git"
 
 group :assets do

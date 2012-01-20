@@ -30,4 +30,5 @@ Colegio::Application.routes.draw do
     resources :adresses
     resources :banners
   end
+  ActionDispatch::Routing::Translator.translate_from_file('config/locales/routes.yml')
 end

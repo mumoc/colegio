@@ -1,9 +1,9 @@
 es:
   forem:
-    access_denied: "You are not allowed to do that."
+    access_denied: No tienes permitido hacer eso
     admin:
-      area: Admin Area
-      welcome: "Welcome to forem's Admin Area."
+      area: Area Administrativa
+      welcome: Bienvenido al area administrativa del foro
       forum:
         index: Manage Forums
         new: Creating a new forum
