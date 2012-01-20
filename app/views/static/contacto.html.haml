@@ -1,20 +1,5 @@
 #contacto
   %h1 Contacto
-  #contenedorforma
-    = form_tag public_contact_path, class: 'form' do
-      %p.name
-        = text_field_tag 'nombre'
-        = label_tag 'nombre'
-      %p.email
-        = email_field_tag 'email'
-        = label_tag 'email'
-      %p.web
-        = phone_field_tag 'tel'
-        = label_tag 'tel'
-      %p.text
-        = text_area_tag 'text'
-      %p.submit
-        = submit_tag 'Enviar'
   #ubicacion
     #escribenos
       %p
