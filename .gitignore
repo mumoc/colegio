@@ -12,4 +12,4 @@ tmp/
 .pairs
 .DS_Store
 overage/*
-
+.DS_Store*
