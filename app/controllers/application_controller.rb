@@ -1,6 +1,12 @@
 class ApplicationController < ActionController::Base
+
+  def forem_user
+    current_member
+  end
+  helper_method :forem_user
+
   protect_from_forgery
-  before_filter :set_locale_from_url
+
   before_filter :find_sidebar_banner
   
   def find_sidebar_banner
