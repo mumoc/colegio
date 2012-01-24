@@ -1,34 +1,25 @@
 #contacto
   %h1 Contacto
-  #contenedorforma
-    = form_tag public_contact_path, class: 'form' do
-      %p.name
-        = text_field_tag 'nombre'
-        = label_tag 'nombre'
-      %p.email
-        = email_field_tag 'email'
-        = label_tag 'email'
-      %p.web
-        = phone_field_tag 'tel'
-        = label_tag 'tel'
-      %p.text
-        = text_area_tag 'text'
-      %p.submit
-        = submit_tag 'Enviar'
+  #escribenos
+    %p
+      %strong Colegio de Médicos Oftalmólogos 
+        %br
+        de Jalisco, A.C.
+      %br/
+      López Cotilla No. 2123, Colonia Arcos Vallarta
+      %br/
+      C.P. 44130 Guadalajara, Jal.,
+      %br/
+      Tel. 01(33) 3630-1304 
+      %br
+      Fax: 01 (33) 3616-9847  
+    #escr
+       %p.resaltar
+       escribenos a:
+       info@oftalmologosjalisco.org.mx
+
   #ubicacion
-    #escribenos
-      %p
-        %strong Colegio de Médicos Oftalmólogos de Jalisco, A.C.
-        %br/
-        López Cotilla No. 2123, Colonia Arcos Vallarta
-        %br/
-        C.P. 44130 Guadalajara, Jal.,
-        %br/
-        Tel. 01(33) 3630-1304 y Fax: 01 (33) 3616-9847
     #mapa
       = gmaps(map_options: {zoom: 16, auto_adjust: true, auto_zoom: false}, markers: { data: "[{'lat':20.673283,'lng':-103.382013}]" } ) 
 
-    #escr
-      %p.resaltar
-        escribenos a:
-        info@oftalmologosjalisco.org.mx
+    
