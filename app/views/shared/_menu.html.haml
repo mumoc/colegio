@@ -4,6 +4,7 @@
     %li.nivel1
       = link_to 'Colegio', '#', class: "nivel1 #{active_class('mision mesa-directiva historia estatutos')}"
       %ul
+        %li= link_to 'Mensaje del Presidente', colege_path('mensaje-presidente')
         %li= link_to 'Misión', colege_path('mision')
         %li= link_to 'Mesa Directiva', colege_path('mesa-directiva')
         %li= link_to 'Historia', colege_path('historia')
