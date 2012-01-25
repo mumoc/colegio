@@ -218,4 +218,8 @@ color: #333;
 	background-color: #CCC;
 }
 
+#nombre
+  font-weight: bold
 
+#cita
+  text-align: center
