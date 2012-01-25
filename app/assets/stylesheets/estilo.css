@@ -218,8 +218,6 @@ color: #333;
 	background-color: #CCC;
 }
 
-#nombre
-  font-weight: bold
+#nombre { font-weight: bold }
 
-#cita
-  text-align: center
+#cita { text-align: center }
