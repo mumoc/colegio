@@ -9,7 +9,11 @@
         Dirigido por: 
       %br
       = @event.coordinator
-      %br
+  #program
+    %h1.resaltar Programa
+    #content
+      = raw @event.program
+  %br
   .item-data
     %span.fecha-evento
       Lugar:
@@ -38,11 +42,6 @@
     = @event.description
 %br
 = gmaps(map_options: { zoom: 16, auto_adjust: true, auto_zoom: false }, markers: { data: @json } )
-
-#program
-  %h1.resaltar Programa
-  #content
-    = raw @event.program
 
 :javascript
   $(document).ready(function(){
