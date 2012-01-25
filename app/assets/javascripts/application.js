@@ -10,4 +10,5 @@
 //= require cocoon
 //= require fullcalendar
 //= require jquery.nivo.slider
+//= require tinymce-jquery
 //= require_tree .

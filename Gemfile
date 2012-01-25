@@ -18,6 +18,7 @@ gem 'inherited_resources'
 gem "simple_form"
 gem "friendly_id", "~> 4.0.0"
 gem 'rails-translate-routes'
+gem 'tinymce-rails'
 
 group :assets do
   gem 'sass-rails',   '~> 3.1.5'

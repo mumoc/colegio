@@ -7,4 +7,12 @@
   = f.input :schedule
   = f.input :google_map
   = f.input :event_date
+  = f.input :program
   = f.submit
+
+:javascript
+  $(function() {
+    $('textarea').tinymce({
+      theme: 'advanced'
+    });
+  });

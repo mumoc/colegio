@@ -38,3 +38,13 @@
     = @event.description
 %br
 = gmaps(map_options: { zoom: 16, auto_adjust: true, auto_zoom: false }, markers: { data: @json } )
+
+#program
+  %h1.resaltar Programa
+  #content
+    = raw @event.program
+
+:javascript
+  $(document).ready(function(){
+    $('#program').accordion({autoHeight: false, collapsible: true, active: false, icons: false});
+  });
