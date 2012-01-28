@@ -1,9 +1,9 @@
 class StaticController < ApplicationController
 
   def show
-    page = params[:id]
+    static_page = params[:page_id]
     begin
-      render :template => "static/#{page}"
+      render "/static/#{static_page}"
     rescue ActionView::MissingTemplate
       redirect_to "/public/404.html"
     end
