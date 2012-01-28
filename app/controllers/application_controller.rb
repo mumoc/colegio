@@ -1,10 +1,9 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
+  before_filter :store_location
   before_filter :set_locale_from_url
   before_filter :find_sidebar_banner
-  before_filter :store_location
-
-  
+   
   def find_sidebar_banner
     @sidebar =  Banner.sidebar_images
   end 
@@ -14,7 +13,7 @@ class ApplicationController < ActionController::Base
   end
  
   def store_location
-    session[:member_return_to] = request.url unless ["devise/sessions" "events/index"].include? params[:controller]
+    session[:member_return_to] = request.url unless ["devise/sessions", "events"].include? params[:controller]
   end
 
   def after_sign_in_path_for(resource)
