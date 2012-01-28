@@ -149,14 +149,11 @@ font-family: Tahoma, Geneva, sans-serif;
 font-size: 14px;
 color: white;
 padding-right: 10px;
--moz-border-radius: 5px;
--webkit-border-radius: 5px;
 text-decoration: none;
-background-color: #999;
+background-color: #D5D5D5;
+border-top: 1px solid gray;
+border-bottom: 1px solid gray;
 
-}
-#filtro #paginacion {
-  background-color: none !important;
 }
 
 #filtro #paginacion ul {
@@ -305,18 +302,14 @@ h4 {
 
 
 #paginacion {
-	background-color: #999;
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 14px;
 	color: #fff;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
 	text-decoration: none;
 	text-align: center;
 	white-space: normal;
-	
 	padding:1px;
-	list-style-type: none;	
+	list-style-type: none;
 	
 }
 
