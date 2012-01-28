@@ -8,8 +8,8 @@ Colegio::Application.routes.draw do
   match '/eventos/categoria/:event_type' => 'events#index', as: 'category_events'
   match '/event_dates/:event_type' => 'event_dates#index'
   match '/colegio/:page_id' => 'static#show', as: 'colege'
-  match '/industria' => 'static#show', id: 'industria', as: 'industry'
-  match '/contacto' => 'static#show', id: 'contacto', as: 'contact'
+  match '/industria' => 'static#show', page_id: 'industria', as: 'industry'
+  match '/contacto' => 'static#show', page_id: 'contacto', as: 'contact'
   match '/sugerencias' => 'contact#new', as: 'suggestions'
   match 'new_suggestion' => 'contact#create', as: 'new_suggestion', via: :post
   match 'public_contact' => 'contact#public_contact', :as => 'public_contact', :via => :post
