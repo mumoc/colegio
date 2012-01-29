@@ -1,25 +1,25 @@
 %nav#menu
   %ul
-    %li.nivel1= link_to 'Inicio', root_path, class: active_class('home')
+    %li.nivel1= link_to 'Inicio', main_app.root_path, class: active_class('home')
     %li.nivel1
       = link_to 'Colegio', '#', class: "nivel1 #{active_class('mision mesa-directiva historia estatutos')}"
       %ul
-        %li= link_to 'Mensaje del Presidente', colege_path('mensaje-presidente')
-        %li= link_to 'Misión', colege_path('mision')
-        %li= link_to 'Mesa Directiva', colege_path('mesa-directiva')
-        %li= link_to 'Historia', colege_path('historia')
-        %li= link_to 'Estatutos', colege_path('estatutos')
+        %li= link_to 'Mensaje del Presidente', main_app.colege_path('mensaje-presidente')
+        %li= link_to 'Misión', main_app.colege_path('mision')
+        %li= link_to 'Mesa Directiva', main_app.colege_path('mesa-directiva')
+        %li= link_to 'Historia', main_app.colege_path('historia')
+        %li= link_to 'Estatutos', main_app.colege_path('estatutos')
 
     %li.nivel1
       = link_to 'Eventos', '#', class: "nivel1 #{active_class('events')}" 
       %ul
-        %li= link_to 'Sesiones Ordinarias', category_events_path('sesiones-ordinarias')
-        %li= link_to 'Educación Continua', category_events_path('educacion-continua')
-        %li= link_to 'Filiales', category_events_path('filiales')
-        %li= link_to 'Congreso', category_events_path('congreso')
+        %li= link_to 'Sesiones Ordinarias', main_app.category_events_path('sesiones-ordinarias')
+        %li= link_to 'Educación Continua', main_app.category_events_path('educacion-continua')
+        %li= link_to 'Filiales', main_app.category_events_path('filiales')
+        %li= link_to 'Congreso', main_app.category_events_path('congreso')
 
-    %li.nivel1= link_to 'Calendario', calendar_index_path,class: active_class('calendar')
-    %li.nivel1= link_to 'Directorio', members_path, class: active_class('members')
+    %li.nivel1= link_to 'Calendario', main_app.calendar_index_path,class: active_class('calendar')
+    %li.nivel1= link_to 'Directorio', main_app.members_path, class: active_class('members')
     %li.nivel1= link_to 'Industria', '#', class: active_class('industria')
     /%li.nivel1= link_to 'Industria', industry_path, class: active_class('industria')
-    %li.nivel1= link_to 'Contacto', contact_path, class: active_class('contacto')
+    %li.nivel1= link_to 'Contacto', main_app.contact_path, class: active_class('contacto')

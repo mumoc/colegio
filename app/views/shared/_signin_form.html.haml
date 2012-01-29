@@ -7,11 +7,11 @@
     %span.mail
       = current_member.email
     %span.mail
-      = link_to 'Sugerencias', suggestions_path
+      = link_to 'Sugerencias', main_app.suggestions_path
 
-  = button_to('Salir', destroy_member_session_path, :method => :delete)
+  = button_to('Salir', main_app.destroy_member_session_path, :method => :delete)
 - else
-  = form_tag member_session_path do
+  = form_tag main_app.member_session_path do
     /= label_tag 'member[email]', 'Email'
     = text_field_tag 'member[email]',nil, placeholder: 'Email'
     /= label_tag 'member[password]', 'Password:'
