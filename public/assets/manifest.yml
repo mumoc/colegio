@@ -23,7 +23,7 @@ foro-ref.jpg: foro-ref-1ec8b870a1cdfea79995433dbaea1b3e.jpg
 logo.png: logo-efeddab068e523d58130320f441ab115.png
 pdficon_large.png: pdficon_large-7c8ec4588bfe7c24c30e0bdbf79b1595.png
 application.js: application-683daa236c362a3a78c58a8b34ec4691.js
-application.css: application-b05c6aa614da397646218a3b90225de5.css
+application.css: application-cc63cff2f60ac6016aaf8344b677e476.css
 arrows.png: arrows-cddf7535dac4df32dd66bacacf5c1911.png
 arrowsCuadro.png: arrowsCuadro-842f9110fd545d768a6dd588f7aedce3.png
 bullets.png: bullets-ef89ea99141fdbbb5f7392aa23568232.png
@@ -31,6 +31,8 @@ loading.gif: loading-e26c97d156b7747cd4d45581116dc1ff.gif
 default/images/arrows.png: default/images/arrows-cddf7535dac4df32dd66bacacf5c1911.png
 default/images/bullets.png: default/images/bullets-ef89ea99141fdbbb5f7392aa23568232.png
 default/images/loading.gif: default/images/loading-e26c97d156b7747cd4d45581116dc1ff.gif
+forem/lock_icon.png: forem/lock_icon-3c913399841bb07e7cd832a25280cb82.png
+forem/pin_icon.png: forem/pin_icon-5cd4f3e53d6223bf2cc9a8f3652618e8.png
 tinymce/jquery-tinymce.js: tinymce/jquery-tinymce-35903f8760a7bc4eee13993059ebf46b.js
 tinymce/tiny_mce.js: tinymce/tiny_mce-22fcb158819ecc7f11212e4d57423a14.js
 tinymce/tiny_mce_jquery.js: tinymce/tiny_mce_jquery-cd1b9c48f60103fd6bdc725e5366344a.js

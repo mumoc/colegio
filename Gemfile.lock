@@ -17,6 +17,12 @@ GIT
       pygments.rb (= 0.2.4)
       redcarpet (= 2.0.1)
 
+GIT
+  remote: git://github.com/radar/forem-theme-base.git
+  revision: e5b955755adb85cdd9c3ee945c760fc88a74c537
+  specs:
+    forem-theme-base (0.0.1)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -199,6 +205,7 @@ DEPENDENCIES
   fog
   forem!
   forem-redcarpet!
+  forem-theme-base!
   friendly_id (~> 4.0.0)
   gmaps4rails
   haml-rails

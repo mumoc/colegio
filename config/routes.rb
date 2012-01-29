@@ -1,11 +1,8 @@
 Colegio::Application.routes.draw do
-  mount Forem::Engine, :at => "/forums"
   devise_for :members
-
   root to: 'home#index'
 
   match '/calendario/dia/:event_date' => 'calendar#show', :as => 'day_events'
-  
   match '/eventos/categoria/:event_type' => 'events#index', as: 'category_events'
   match '/event_dates/:event_type' => 'event_dates#index'
   match '/colegio/:page_id' => 'static#show', as: 'colege'
@@ -29,7 +26,6 @@ Colegio::Application.routes.draw do
     resources :adresses
     resources :banners
   end 
+  ActionDispatch::Routing::Translator.translate_from_file('config/locales/routes.yml')
+  mount Forem::Engine, :at => "/forums"
 end
-ActionDispatch::Routing::Translator.translate_from_file('config/locales/routes.yml')
-
-
