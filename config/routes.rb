@@ -1,4 +1,5 @@
 Colegio::Application.routes.draw do
+  mount Forem::Engine, :at => "/forums"
   devise_for :members
 
   root to: 'home#index'
@@ -27,7 +28,8 @@ Colegio::Application.routes.draw do
     resources :members
     resources :adresses
     resources :banners
-  end
-
-  ActionDispatch::Routing::Translator.translate_from_file('config/locales/routes.yml')
+  end 
 end
+ActionDispatch::Routing::Translator.translate_from_file('config/locales/routes.yml')
+
+
