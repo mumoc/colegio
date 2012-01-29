@@ -2,6 +2,8 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.3'
 
+gem 'forem', :git => "git://github.com/radar/forem.git"
+
 gem 'sqlite3'
 gem 'rmagick'
 gem 'rack-cache', :require => 'rack/cache'
