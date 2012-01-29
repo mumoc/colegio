@@ -27,7 +27,7 @@ class ApplicationController < ActionController::Base
   end
 
   def after_sign_out_path_for(member)
-    stored_location_for(member) || root_path
+    root_path
   end
 
 end
