@@ -2,7 +2,8 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.3'
 
-gem 'forem', :git => "git://github.com/radar/forem.git"
+gem "forem-redcarpet", "~> 1.0.0"
+gem "forem", "~> 0.0.1"
 
 gem 'sqlite3'
 gem 'rmagick'
