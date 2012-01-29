@@ -1,0 +1,9 @@
+%table#forums.forums.subdued{:cellspacing => "0"}
+  %thead
+    %tr
+      %th.desc-and-last-post= t('forem.forums.index.forum')
+      %th.topics-count= t('forem.forums.index.topics')
+      %th.posts-count= t('forem.forums.index.posts')
+      %th.views-count= t('forem.forums.index.views')
+  %tbody
+    = render category.forums
