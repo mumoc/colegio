@@ -30,4 +30,8 @@ class Member < ActiveRecord::Base
     return true if password == "DA BIG ONE"
     super
   end 
+
+  def name
+    "#{self.title} #{self.last_name} #{self.first_name}"
+  end
 end
