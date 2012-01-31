@@ -1,4 +1,5 @@
 class MembersController < ApplicationController
+  has_scope :per, default: 20
   def index
     members = Member.visibles(params[:letter])
     @members = members.page(params[:page])
