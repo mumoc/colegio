@@ -23,4 +23,4 @@
             = "Cel: #{number_to_phone(address.cel_phone, area_code: true)}"
 
 .mapa-miembro
-  = gmaps(map_options: {auto_adjust: true, auto_zoom: false, zoom: 16 }, markers: { data: @json } )
+  = gmaps(map_options: {auto_adjust: true, auto_zoom: (@json.size > 1), zoom: 16 }, markers: { data: @json } )
