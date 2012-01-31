@@ -4,12 +4,12 @@
       %td
         = f.input :address do
           = f.input :street
+          = f.input :google_map, label: 'Int'
+          = f.input :colony
           = f.input :city
           = f.input :state
           = f.input :local_phone
           = f.input :cel_phone
-          = f.input :google_map
-          = f.input :colony
       %td
         = link_to_remove_association "Remove Address", f
 

@@ -12,12 +12,15 @@
           %strong Dirección
           %br
           = address.street
+          = address.google_map unless address.google_map.blank?
           %br
           = address.full_address
-          %br
-          = "Tel: #{number_to_phone(address.local_phone, area_code: true)}"
-          %br
-          = "Cel: #{number_to_phone(address.cel_phone, area_code: true)}"
+          - unless address.local_phone.blank?
+            %br
+            = "Tel: #{number_to_phone(address.local_phone, area_code: true)}"
+          - unless address.cel_phone.blank?
+            %br
+            = "Cel: #{number_to_phone(address.cel_phone, area_code: true)}"
 
 .mapa-miembro
   = gmaps(map_options: {auto_adjust: true, auto_zoom: false, zoom: 16 }, markers: { data: @json } )
