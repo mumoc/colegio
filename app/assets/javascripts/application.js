@@ -11,4 +11,5 @@
 //= require fullcalendar
 //= require jquery.nivo.slider
 //= require tinymce-jquery
+//= require modernizr
 //= require_tree .
