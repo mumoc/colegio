@@ -1,167 +1,167 @@
 es:
   forem:
-    access_denied: "You are not allowed to do that."
+    access_denied: "No está permitido para eso"
     admin:
       area: Admin Area
-      welcome: "Welcome to forem's Admin Area."
+      welcome: "Bienvenido al area de administración del foro"
       forum:
-        index: Manage Forums
-        new: Creating a new forum
-        new_link: New Forum
-        deleted: The selected forum has been deleted.
-        created: This forum has been created.
-        not_created: This forum could not be created.
-        updated: That forum has been updated.
-        not_updated: This forum could not be updated.
+        index: Gestionar foros
+        new: Crear un nuevo foro
+        new_link: Nuevo foro
+        deleted: El foro selecionado ha sido borrado
+        created: El foro ha sido creado
+        not_created: Este foro no puede ser creado
+        updated: El foro ha sido actualizado
+        not_updated: Esté foro no puede ser actualizado
       forums:
-        edit: Edit
-        delete: Delete
-        forum: Forum
-        category: Category
-        topics: Topics
+        edit: Editar
+        delete: Borrar
+        forum: Foro
+        category: Categoría
+        topics: Temas
         posts: Posts
-        delete_confirm: Are you sure you want to delete this forum?
+        delete_confirm: Esta usted seguro que quieres borrar este foro?
         index:
-          last_post: Last post
+          last_post: Último post
           none: None
       category:
-        index: Manage Forum Categories
-        new: Creating a new Forum Category
-        new_link: New Forum Category
-        deleted: The selected forum category has been deleted.
-        created: This forum category has been created.
-        not_created: This forum category could not be created.
-        updated: That forum category has been updated.
-        not_updated: This forum category could not be updated.
+        index: Gestionar categorías
+        new: Crear nueva categoria
+        new_link: Nueva categoría
+        deleted: La categoría selecionada ha sido borrada
+        created: La categoría ha sido creada
+        not_created: La categoría no puede ser creada
+        updated: La categoría ha sido actualizada
+        not_updated: La categoría no puede ser actualizada
       categories:
-        edit: Edit
-        delete: Delete
-        category: Category
-        delete_confirm: Are you sure you want to delete this forum category?
+        edit: Editar
+        delete: Borrar
+        category: Categoría
+        delete_confirm: Está seguro de borrar esta categoría?
     common:
-      pages: Pages
+      pages: Páginas
     errors:
-      not_signed_in: You must sign in first.
-      access_denied: Access denied.
+      not_signed_in: Debes iniciar sesión primero.
+      access_denied: Acceso denegado
     forum:
-      header: "Viewing %{title}"
-      forums: Forums
-      new: Creating a new forum
-      edit: "Editing the %{title} forum"
+      header: "Viendo %{title}"
+      forums: Foros
+      new: Crear nuevo foro
+      edit: "Editar el %{title} foro"
       topics_count:
-        zero: 0 topics
-        one: 1 topic
-        other: "%{count} topics"
+        zero: 0 temas
+        one: 1 tema
+        other: "%{count} temas"
       posts_count:
         zero: 0 posts
         one: 1 post
         other: "%{count} posts"
     forums:
       index:
-        title: Forums
-        forum: Forum
-        topics: Topics
+        title: Foros
+        forum: Foro
+        topics: Temas
         posts: Posts
-        views: Views
-        last_post: 'Last Post:'
+        views: Vistas
+        last_post: 'Último Post:'
         none: None
     topic:
       headings:
-        topic: Topic
-        latest: Latest
+        topic: Tema
+        latest: más reciente
         posts: Posts
         views: Views
-      reply: Reply
-      quote: Quote
-      delete: Delete
-      created: This topic has been created.
-      new: Creating a new topic
-      edit: Editing topic
-      not_created: This topic could not be created.
-      deleted: Your topic has been deleted.
-      cannot_delete: You cannot delete a topic you do not own.
-      updated: This topic has been updated.
-      not_updated: This topic could not be updated.
-      subscribed: You have subscribed to this topic.
-      unsubscribed: You have unsubscribed from this topic.
-      none: There are no topics in this forum currently.
+      reply: Respuesta
+      quote: Cita
+      delete: Borrar
+      created: El tema ha sido creado
+      new: Crear un nuevo tema
+      edit: Editar tema
+      not_created: El tema no pede ser creado
+      deleted: El tema ha sido borrado
+      cannot_delete: No se puede borrar un tema que no es suyo
+      updated: El tema ha sido actualizado
+      not_updated: El tema no pudo ser actualizado
+      subscribed: Se ha suscrito a este tema.
+      unsubscribed: Ha cancelado la suscripción a este tema.
+      none: No hay temas en este foro actualmente
       links:
-        new: New topic
-        back_to_topics: Back to topics
-        edit: Edit topic
-      not_found: The topic you are looking for could not be found.
+        new: Nuevo tema
+        back_to_topics: Regresar a temas
+        edit: Editar temas
+      not_found: El tema que está buscando no se pudo encontrar.
       hidden:
-        'true': This topic is now hidden.
-        'false': This topic is now visible.
+        'true': Este tema está oculto.
+        'false': Este tema es ahora visible.
       locked:
-        'true': This topic is now locked.
-        'false': This topic is now unlocked.
+        'true': Este tema está bloqueado.
+        'false': Este tema está desbloqueado.
       pinned:
-        'true': This topic is now pinned.
-        'false': This topic is now unpinned.
+        'true': Este tema está ahora fijo
+        'false': Este tema está ahora libre.
     topics:
       show:
-        reply: Reply
-        delete: Delete
-        subscribe: Subscribe
-        unsubscribe: Unsubscribe
-        reply_to_topic: Reply to Topic
+        reply: Respuesta
+        delete: Borrar
+        subscribe: Suscribir
+        unsubscribe: Darse de baja
+        reply_to_topic: Responder al tema
         hide:
-          'true': Show this topic
-          'false': Hide this topic
+          'true': Mostrar este tema
+          'false': Ocultar este tema
         lock:
-          'true': Unlock this topic
-          'false': Lock this topic
+          'true': Bloquear este tema
+          'false': Desbloquear este tema
         pin:
-          'true': Unpin this topic
-          'false': Pin this topic
+          'true': Liberar este tema
+          'false': Fijar este tema
     post:
       buttons:
-        reply: Post Reply
-        edit: Edit
-      created: Your reply has been posted.
-      new: Post reply
-      edit: Edit
-      not_created: Your reply could not be posted.
-      not_created_topic_locked: You cannot reply to a locked topic.
-      edited: Your post has been edited.
-      not_edited: Your post could not be edited.
-      deleted: Your post has been deleted.
+        reply: Responder al post
+        edit: Editar
+      created: Tu respuesta ha sido publicada.
+      new: Responder al post
+      edit: Editar
+      not_created: Tu respuesta no pudo ser publicada
+      not_created_topic_locked: No puede responder a un tema cerrado.
+      edited: Su respuesta ha sido editada.
+      not_edited: Su respuesta no pudo ser editada.
+      deleted: Tu respuesta ha sido borrada.
       deleted_with_topic: Only post in topic deleted. Topic also deleted.
-      cannot_delete: You cannot delete a post you do not own.
-      in_reply_to: In reply to
+      cannot_delete: No se puede borrar un mensaje que no es suyo
+      in_reply_to: En respuesta de
   helpers:
     submit:
       forum:
-        create: Create Forum
-        update: Update Forum
+        create: Crear foro
+        update: Actualizar foro
       topic:
-        create: Create Topic
-        update: Update Topic
+        create: Crear tema
+        update: Actualizar tema
   simple_form:
     labels:
       forum:
-        title: Title
-        description: Description
+        title: Título
+        description: Descripción
       topic:
-        subject: Subject
-        locked: Locked
-        pinned: Pinned
-        hidden: Hidden
+        subject: Asunto
+        locked: Bloqueado
+        pinned: Fijo
+        hidden: Oculto
         posts:
-          text: Text
+          text: Texto
       post:
-        text: Text
+        text: Texto
   refinery:
     plugins:
       refinery_forem:
-        title: Forums
-        description: Manage forums
+        title: Foros
+        description: Gestionar foros
 
   # General stuff
-  time_ago_in_words: "%{time} ago"
-  ago: " ago"
-  ago_by: " ago by"
-  by: by
-  started_by: "Started by "
-  are_you_sure: Are you sure?
+  time_ago_in_words: "%{time} antes"
+  ago: " antes"
+  ago_by: " antes por"
+  by: por
+  started_by: "Inciado por "
+  are_you_sure: Esta seguro?
