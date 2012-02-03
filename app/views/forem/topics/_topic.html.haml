@@ -11,7 +11,7 @@
     .subject= link_to topic.subject, forum_topic_path(@forum, topic)
     .started-by
       = t "started_by"
-      = topic.posts.by_created_at.first.user
+      = topic.posts.by_created_at.first.user.name
   %td.latest-post
     = link_to_latest_post(topic.posts.by_created_at.last)
   %td.posts-count= topic.posts.count

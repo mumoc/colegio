@@ -7,5 +7,6 @@
  *= require jquery-ui-1.8.16.custom
  *= require nivo-slider.css
  *= require default.css
+ *= require forem/base/style
  *= require_tree .
 */
