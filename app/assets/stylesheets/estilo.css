@@ -49,7 +49,7 @@
 
 #left {
 	width: 725px;
-  min-height: 750px;
+  min-height: 820px;
   float: left; 
   background-image: url(fondoLeft.gif);
 }
@@ -64,7 +64,7 @@
 }
 
 .home {
-  min-height: 435px !important;
+  min-height: 505px !important;
 }
 
 
