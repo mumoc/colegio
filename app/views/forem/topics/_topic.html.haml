@@ -13,6 +13,7 @@
       = t "started_by"
       = topic.posts.by_created_at.first.user.name
   %td.latest-post
-    = link_to_latest_post(topic.posts.by_created_at.last)
+    - text = "#{time_ago_in_words(topic.posts.by_created_at.last.created_at)} #{t("ago_by")} #{topic.posts.by_created_at.last.user.name}"
+    = link_to text, forum_topic_path(topic.posts.by_created_at.last.topic.forum, topic.posts.by_created_at.last.topic, :anchor => "post-#{topic.posts.by_created_at.last.id}")
   %td.posts-count= topic.posts.count
   %td.views-count= topic.views.sum(:count)
