@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+img {
+  border: none;
+}
 #container {
 	margin: 0 auto;
 	width: 960px;

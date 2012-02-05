@@ -4,6 +4,7 @@
 // It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
 // the compiled file.
 //
+//= require modernizr
 //= require jquery
 //= require jquery_ujs
 //= require jquery-ui
@@ -11,5 +12,4 @@
 //= require fullcalendar
 //= require jquery.nivo.slider
 //= require tinymce-jquery
-//= require modernizr
 //= require_tree .
