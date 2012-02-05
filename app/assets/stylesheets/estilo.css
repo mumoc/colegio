@@ -3,6 +3,9 @@
 img {
   border: none;
 }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
 #container {
 	margin: 0 auto;
 	width: 960px;
