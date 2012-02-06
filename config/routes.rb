@@ -2,6 +2,8 @@ Colegio::Application.routes.draw do
   devise_for :members
   root to: 'home#index'
 
+  match '/testing' => 'members#testing'
+
   match '/calendario/dia/:event_date' => 'calendar#show', :as => 'day_events'
   match '/eventos/categoria/:event_type' => 'events#index', as: 'category_events'
   match '/event_dates/:event_type' => 'event_dates#index'
