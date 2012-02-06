@@ -1,4 +1,3 @@
 - if can?(:read, category)
   .category{:id => "category_#{category.id}"}
-    %h2= link_to category.name, category
     = render "forem/forums/listing", :category => category
