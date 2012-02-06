@@ -7,10 +7,8 @@
     %span.mail
       = current_member.email
   = button_to('Salir', main_app.destroy_member_session_path, :method => :delete)
-  = link_to main_app.suggestions_path do
-    = image_tag 'buzon_sidebar_btn.png'
-  = link_to '/forums' do
-    = image_tag 'foro_sidebar_btn.png'
+  = button_to 'Foro', '/forums', style: 'width: 220px;'
+  = button_to 'Sugerencias', main_app.suggestions_path, style: 'width: 220px;'
 - else
   = form_tag main_app.member_session_path do
     /= label_tag 'member[email]', 'Email'
