@@ -159,7 +159,7 @@ es:
         description: Gestionar foros
 
   # General stuff
-  time_ago_in_words: "%{time} antes"
+  time_ago_in_words: "hace %{time}"
   ago: " antes"
   ago_by: " antes por"
   by: por

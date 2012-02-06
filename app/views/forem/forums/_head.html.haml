@@ -1,7 +1,7 @@
 #forum
   %h2
     = link_to t('forem.forum.forums'), forums_path
-    \&raquo; #{link_to forum.category, forum.category} &raquo; #{link_to forum.title, forum}
+    \&raquo; #{link_to forum.title, forum}
   %small= forum.description
   %menu#forum_topic_links
     - unless @topic.try(:new_record?)
