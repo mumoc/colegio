@@ -38,4 +38,12 @@ class Event < ActiveRecord::Base
       dates = dates.select('DISTINCT ON (events.event_date) events.title, events.description, events.coordinator, events.event_type, events.place, events.schedule, events.google_map, events.event_date, events.slug')
     end
   end
+
+  def self.main_types
+    {'Sesiones Ordinarias' => 'sesiones-ordinarias','Educacion Continua' => 'educacion-continua', 'Filiales' => 'filiales', 'Congreso' => 'congreso'}
+  end
+
+  def self.sub_types
+    [1]
+  end
 end
