@@ -27,7 +27,8 @@ Colegio::Application.routes.draw do
     resources :members
     resources :adresses
     resources :banners
-  end 
+  end
+ mount Forem::Engine, :at => "/forums" 
   ActionDispatch::Routing::Translator.translate_from_file('config/locales/routes.yml')
-  mount Forem::Engine, :at => "/forums"
+  
 end
