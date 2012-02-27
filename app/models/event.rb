@@ -2,7 +2,7 @@ class Event < ActiveRecord::Base
   default_scope order('events.event_date ASC')
   extend FriendlyId
   friendly_id :title, use: :slugged
-  
+
   acts_as_gmappable check_process: false
 
   def gmaps4rails_address
@@ -20,7 +20,11 @@ class Event < ActiveRecord::Base
   def self.selected event_type
     event_type ? where(event_type: event_type) : all
   end
-  
+
+  def self.selected_sub sub_type
+    where(sub_type: sub_type)
+  end
+
   def self.selected_dates data
     start_date = Time.at(data[:start].to_i).to_date
     end_date = Time.at(data[:end].to_i).to_date
@@ -32,7 +36,7 @@ class Event < ActiveRecord::Base
     start_date = Time.at(data[:start].to_i).to_date
     end_date = Time.at(data[:end].to_i).to_date
     dates = where(event_date: start_date..end_date)
-    unless ActiveRecord::Base.connection.adapter_name == 'PostgreSQL' 
+    unless ActiveRecord::Base.connection.adapter_name == 'PostgreSQL'
       dates = dates.group(:event_date)
     else
       dates = dates.select('DISTINCT ON (events.event_date) events.title, events.description, events.coordinator, events.event_type, events.place, events.schedule, events.google_map, events.event_date, events.slug')

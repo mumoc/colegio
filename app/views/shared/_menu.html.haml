@@ -12,11 +12,11 @@
         %li= link_to 'Requisitos', colege_path('requisitos')
 
     %li.nivel1
-      = link_to 'Eventos', '#', class: "nivel1 #{active_class('events')}" 
+      = link_to 'Eventos', '#', class: "nivel1 #{active_class('events')}"
       %ul
         %li= link_to 'Sesiones Ordinarias', main_app.category_events_path('sesiones-ordinarias')
-        %li= link_to 'Educación Continua', main_app.category_events_path('educacion-continua')
-        %li= link_to 'Filiales', main_app.category_events_path('filiales')
+        %li= link_to 'Educación Continua', main_app.modulos_path
+        %li= link_to 'Filiales', main_app.filiales_path
         %li= link_to 'Congreso', main_app.category_events_path('congreso')
 
     %li.nivel1= link_to 'Calendario', main_app.calendar_index_path,class: active_class('calendar')
