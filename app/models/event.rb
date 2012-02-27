@@ -5,6 +5,23 @@ class Event < ActiveRecord::Base
 
   acts_as_gmappable check_process: false
 
+  def self.subtype sub_type
+    subtypes = {'asociacion-glaucoma' => 'Asociaci&#243n de Glaucoma de Occidente 2012',
+    'pediatrica' => 'Sociedad de Oftalmolog&#237a Pedi&#225trica y Estrabismo de Occidente 2012',
+    'oftalmologico' => 'Grupo Oftalmol#243ngico',
+    'oculoplastica' =>  'Sociedad Cirugia Oculopl&#225stica Orbitaria',
+    'academico-retina' => 'Programa Acad&#233mico de la Asociaci#243n de Retina de Occidente 2012',
+    'glaucoma' => 'M#243dulo: Glaucoma',
+    'retina' => 'M#243dulo: Retina',
+    'oftalmologia' => 'M#243dulo: Oftalmolog&#237a Pedi&#225trica y Estrabismo',
+    'refraccion' => 'M#243dulo: Refracci#243n',
+    'neuro' => 'M#243dulo: Neuro Oftalmolog&#237a',
+    'cornea' => 'M#243dulo: C#243rnea y Catarata',
+    'tecnologia' => 'M#243dulo: Tecnolog&#237a de Punta'}
+    subtypes[sub_type]
+  end
+
+
   def gmaps4rails_address
     "#{self.google_map}"
   end
