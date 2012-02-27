@@ -7,7 +7,9 @@ Colegio::Application.routes.draw do
   match '/eventos/categoria/:event_type' => 'events#index', as: 'category_events'
   match '/event_dates/:event_type' => 'event_dates#index'
   match '/colegio/:page_id' => 'static#show', as: 'colege'
-  match '/(filiales|modulos)/:sub_type' => 'events#index', as: 'sub_category_events'
+  match '/filiales/:sub_type' => 'events#index', as: 'sub_category_events'
+  match '/modulos/:sub_type' => 'events#index', as: 'sub_category_events'
+
   match '/industria' => 'static#show', page_id: 'industria', as: 'industry'
   match '/contacto' => 'static#show', page_id: 'contacto', as: 'contact'
   match '/filiales' => 'static#show', page_id: 'indice-filiales', as: 'filiales'

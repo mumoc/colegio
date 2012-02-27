@@ -4,7 +4,7 @@
   = f.input :description
   = f.input :event_type, collection: Event.main_types, prompt: 'Select Event Type'
   = f.input :sub_type, collection: Event.sub_types, label:false
-  = f.input :place 
+  = f.input :place
   = f.input :schedule
   = f.input :google_map
   = f.input :event_date
@@ -17,11 +17,11 @@
     var value = $('#event_event_type :selected').val();
     switch(value){
       case 'filiales':
-        var select = "<option value='glaucoma'> Asociación de Glaucoma de Occidente 2012 </option>" +
+        var select = "<option value='asocciacion-glaucoma'> Asociación de Glaucoma de Occidente 2012 </option>" +
           "<option value='pediatrica'>  Sociedad de Oftalmología Pediátrica y Estrabismo de Occidente 2012 </option>" +
           "<option value='oftalmologico'> Grupo Oftalmológico </option>" +
           "<option value='oculoplastica'>  Sociedad Cirugia Oculoplástica Orbitaria </option>" +
-          "<option value='retina'>  Programa Académico de la Asociacion de Retina de Occidente 2012 </option>"
+          "<option value='academico-retina'>  Programa Académico de la Asociacion de Retina de Occidente 2012 </option>"
         $('#event_sub_type').show();
         $('#event_sub_type').html(select);
         break;
@@ -32,7 +32,7 @@
           "<option value='refraccion'> Módulo: Refracción </option>" +
           "<option value='neuro'> Módulo: Neuro Oftalmología </option>" +
           "<option value='cornea'> Módulo: Córnea y Catarata </option>" +
-          "<option value='tecnologia'> Módulo: Tecnología de Punta </option>" 
+          "<option value='tecnologia'> Módulo: Tecnología de Punta </option>"
         $('#event_sub_type').show();
         $('#event_sub_type').html(select);
         break;

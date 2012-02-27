@@ -1,7 +1,7 @@
 = link_to 'Calendario', calendar_index_path, id: 'regresar-lista', style: 'float:right;'
 #directorio
-  %h1 
-    = page_title 
+  %h1
+    = page_title
 = paginate @events
 
 .eventos
@@ -11,11 +11,11 @@
         %li
           .lista-eventos
             %a{href: event_path(event)}
-              %span.fecha-evento 
+              %span.fecha-evento
                 = localized_date event.event_date
               %br
-              %span.nombre-eventos 
+              %span.nombre-eventos
                 = event.title
               %br
-              %span.cordinador-eventos 
+              %span.cordinador-eventos
                 = event.coordinator
