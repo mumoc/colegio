@@ -8,7 +8,7 @@ class Event < ActiveRecord::Base
   def self.subtype sub_type
     subtypes = {'asociacion-glaucoma' => 'Asociaci&#243n de Glaucoma de Occidente 2012',
     'pediatrica' => 'Sociedad de Oftalmolog&#237a Pedi&#225trica y Estrabismo de Occidente 2012',
-    'oftalmologico' => 'Grupo Oftalmol#243ngico',
+    'oftalmologico' => 'Grupo Oftalmol&#243gico',
     'oculoplastica' =>  'Sociedad Cirugia Oculopl&#225stica Orbitaria',
     'academico-retina' => 'Programa Acad&#233mico de la Asociaci&#243n de Retina de Occidente 2012',
     'glaucoma' => 'M&#243dulo: Glaucoma',
