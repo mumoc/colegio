@@ -15,5 +15,6 @@ class MembersController < ApplicationController
   def show
     @member = Member.find params[:id]
     @json = @member.addresses.to_gmaps4rails
+    @zoom = @member.addresses.size > 1
   end
 end
