@@ -28,11 +28,9 @@ Colegio::Application.routes.draw do
   namespace :admin do
     root to: 'events#index'
     resources :events
-    resources :members
+    resources :miembros
     resources :adresses
     resources :banners
   end
  mount Forem::Engine, :at => "/forums"
-  ActionDispatch::Routing::Translator.translate_from_file('config/locales/routes.yml')
-
 end

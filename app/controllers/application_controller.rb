@@ -7,12 +7,12 @@ class ApplicationController < ActionController::Base
 
   protect_from_forgery
   before_filter :store_location
-  before_filter :set_locale_from_url
+
   before_filter :find_sidebar_banner
 
   def find_sidebar_banner
     @sidebar ||=  Banner.sidebar_images
-  end 
+  end
 
   def set_locale
     I18n.locale = :es

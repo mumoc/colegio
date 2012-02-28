@@ -4,12 +4,12 @@
     %li.nivel1
       = link_to 'Colegio', '#', class: "nivel1 #{active_class('mision mesa-directiva historia estatutos')}"
       %ul
-        %li= link_to 'Mensaje del Presidente', colege_path('mensaje-presidente')
-        %li= link_to 'Misión', colege_path('mision')
-        %li= link_to 'Mesa Directiva', colege_path('mesa-directiva')
-        %li= link_to 'Historia', colege_path('historia')
-        %li= link_to 'Estatutos', colege_path('estatutos')
-        %li= link_to 'Requisitos', colege_path('requisitos')
+        %li= link_to 'Mensaje del Presidente', main_app.colege_path('mensaje-presidente')
+        %li= link_to 'Misión', main_app.colege_path('mision')
+        %li= link_to 'Mesa Directiva', main_app.colege_path('mesa-directiva')
+        %li= link_to 'Historia', main_app.colege_path('historia')
+        %li= link_to 'Estatutos', main_app.colege_path('estatutos')
+        %li= link_to 'Requisitos', main_app.colege_path('requisitos')
 
     %li.nivel1
       = link_to 'Eventos', '#', class: "nivel1 #{active_class('events')}"
