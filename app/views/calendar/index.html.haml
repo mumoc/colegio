@@ -22,7 +22,7 @@
   #place
     Lugar:
     %p
-      %span.place   
+      %span.place
       %span.map
   #details
     = link_to 'Detalles', '#'
@@ -33,7 +33,7 @@
     $('#base-dialog').dialog({ autoOpen:false, resizable: false, minWidth: 400, minHeight: 220 });
     $('#calendar').fullCalendar({
       theme: true,
-      weekMode: 'variable', 
+      weekMode: 'variable',
       dayNamesShort: ['Dom', 'Lun', 'Mar', 'Mié','Jue', 'Vie', 'Sab'],
       monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio','Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
       buttonText: {
@@ -78,14 +78,14 @@
         inner.html('');
         inner.prepend('<div class="color" style="background:' + style +  ';"></div>');
         inner.append(title);
-        inner.find('.fc-event-title').html(short_title);    
+        inner.find('.fc-event-title').html(short_title);
       },
       eventClick: function(event) {
-        dialog = $('#base-dialog');        
+        dialog = $('#base-dialog');
         dialog.find('#schedule > p.schedule').html(event.schedule);
         dialog.find('#place > p > span.place').html(event.place);
         dialog.find('#place > p > span.map').html(event.map);
-        dialog.find('#details > a').attr('href', '/eventos/' + event.slug)
+        dialog.find('#details > a').attr('href', '/events/' + event.slug)
         dialog.dialog('option', 'title', event.title);
         dialog.dialog('open');
         return false;
