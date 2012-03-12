@@ -1,6 +1,6 @@
 GIT
-  remote: git://github.com/radar/forem
-  revision: 28e0a626cb74ad5574f46c83d1dc400a5520e5fd
+  remote: git://github.com/mumo/forem.git
+  revision: 47f8aeca1111c5edf98a68475df594b9cff4d04f
   specs:
     forem (0.1)
       cancan
