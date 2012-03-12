@@ -15,7 +15,7 @@ class ContactController < ApplicationController
   def create
     message = params[:text]
     Message.suggestion(current_member.first_name, message).deliver
-    redirect_to root_path
+    redirect_to suggestions_path, notice: 'Su mensaje ha sido enviado exitosamente, gracias'
   end
 
   private
