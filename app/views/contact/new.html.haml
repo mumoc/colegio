@@ -1,6 +1,7 @@
 #sugerencias
   #notice
     = flash[:notice]
+    = javascript_tag "$('#notice').effect('highlight',{},1000).fadeOut('slow');"
   %h1 Sugerencias
   #textoSugerencias
     %p.nombre-eventos
