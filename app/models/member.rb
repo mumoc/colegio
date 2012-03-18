@@ -13,7 +13,7 @@ class Member < ActiveRecord::Base
     first_name
     last_name
     email
-    '' 'Password'
+    password
     street 
     colony 
     city
