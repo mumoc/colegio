@@ -9,11 +9,11 @@ class Member < ActiveRecord::Base
   devise :database_authenticatable
 
   comma do
-    title
-    first_name
-    last_name
-    email
-    password
+    title 'title'
+    first_name 'first_name'
+    last_name 'last_name'
+    email 'email'
+    password 'password'
     street 'REL.addresses_attributes.street'
     colony 'REL.addresses_attributes.colony'
     city 'REL.addresses_attributes.city'
