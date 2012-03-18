@@ -14,12 +14,12 @@ class Member < ActiveRecord::Base
     last_name
     email
     password
-    street 
-    colony 
-    city
-    state
-    local_phone
-    cel_phone
+    street 'REL.addresses_attributes.street'
+    colony 'REL.addresses_attributes.colony'
+    city 'REL.addresses_attributes.city'
+    state 'REL.addresses_attributes.state'
+    local_phone 'REL.addresses_attributes.local_phone'
+    cel_phone 'REL.addresses_attributes.cel_phone'
   end
 
   extend FriendlyId
