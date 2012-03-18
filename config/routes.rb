@@ -28,7 +28,9 @@ Colegio::Application.routes.draw do
   namespace :admin do
     root to: 'events#index'
     resources :events
-    resources :members
+    resources :members do
+      get 'download', action: :report, on: :collection
+    end
     resources :adresses
     resources :banners
   end

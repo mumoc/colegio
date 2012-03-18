@@ -69,6 +69,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.2.0)
+    comma (3.0.3)
     devise (1.5.3)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.0.3)
@@ -199,6 +200,7 @@ PLATFORMS
 DEPENDENCIES
   cocoon
   coffee-rails (~> 3.1.1)
+  comma (~> 3.0)
   devise
   dragonfly (~> 0.9.9)
   fog

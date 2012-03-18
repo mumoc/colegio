@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.3'
+gem 'comma', '~> 3.0'
 
 gem 'forem', :git => "git://github.com/mumo/forem.git"
 gem 'forem-redcarpet', :git => "git://github.com/radar/forem-redcarpet"

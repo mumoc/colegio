@@ -8,6 +8,20 @@ class Member < ActiveRecord::Base
 
   devise :database_authenticatable
 
+  comma do
+    title
+    first_name
+    last_name
+    email
+    first_name 'Password'
+    street 
+    colony 
+    city
+    state
+    local_phone
+    cel_phone
+  end
+
   extend FriendlyId
   friendly_id :last_name, use: :slugged
 
